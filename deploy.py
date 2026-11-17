@@ -12,10 +12,16 @@ def run_command(command, description):
 def main():
     print("=== 🚀 AVVIO AUTOMAZIONE SILVER PALACE ===")
     
-    # 1. Esegue il master script che fa partire tutti gli altri (multimedia, recent, tags)
+    # 1. Esegue il master script per gli indici (multimedia, recent, tags)
     run_command("python build_indexes.py", "Generazione indici e aggiornamento script")
 
-    # 2. Automazione Git completa (Add, Commit, Push)
+    # 2. Compila il sito statico con Quartz
+    run_command("npx quartz build", "Compilazione del sito con Quartz")
+
+    # 3. Corregge i percorsi dei tag nei file HTML generati
+    run_command("python fix_tags.py", "Correzione automatica dei tag per SPVault")
+
+    # 4. Automazione Git completa (Add, Commit, Push)
     run_command("git add .", "Aggiunta file modificati a Git (git add)")
     
     commit_msg = "Aggiornamento automatico Silver Palace"
