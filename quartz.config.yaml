@@ -124,9 +124,6 @@ plugins:
     enabled: true
   - source: "@quartz-community/explorer"
     enabled: true
-    options:
-      folderDefaultState: collapsed
-      filterFn: (node) => node.name !== "_Multimedia"
     layout:
       position: left
       priority: 50
