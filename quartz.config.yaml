@@ -15,33 +15,33 @@ configuration:
     - .obsidian
     - Template
   theme:
-  fontOrigin: googleFonts
-  cdnCaching: true
-  typography:
-    header: Schibsted Grotesk
-    body: Source Sans Pro
-    code: IBM Plex Mono
-  colors:
-    lightMode:
-      light: "#f6f8fa"
-      lightgray: "#e1e4e8"
-      gray: "#959d0b"
-      darkgray: "#24292e"
-      dark: "#1b1f23"
-      secondary: "#0366d6"
-      tertiary: "#6f42c1"
-      highlight: rgba(3, 102, 214, 0.1)
-      textHighlight: "#fff23688"
-    darkMode:
-      light: "#0d1117"
-      lightgray: "#21262d"
-      gray: "#8b949e"
-      darkgray: "#c9d1d9"
-      dark: "#f0f6fc"
-      secondary: "#58a6ff"
-      tertiary: "#79c0ff"
-      highlight: rgba(88, 166, 255, 0.15)
-      textHighlight: "#b3aa0288"
+    fontOrigin: googleFonts
+    cdnCaching: true
+    typography:
+      header: Schibsted Grotesk
+      body: Source Sans Pro
+      code: IBM Plex Mono
+    colors:
+      lightMode:
+        light: "#f6f8fa"
+        lightgray: "#e1e4e8"
+        gray: "#959d0b"
+        darkgray: "#24292e"
+        dark: "#1b1f23"
+        secondary: "#0366d6"
+        tertiary: "#6f42c1"
+        highlight: rgba(3, 102, 214, 0.1)
+        textHighlight: "#fff23688"
+      darkMode:
+        light: "#0d1117"
+        lightgray: "#21262d"
+        gray: "#8b949e"
+        darkgray: "#c9d1d9"
+        dark: "#f0f6fc"
+        secondary: "#58a6ff"
+        tertiary: "#79c0ff"
+        highlight: rgba(88, 166, 255, 0.15)
+        textHighlight: "#b3aa0288"
   links:
     markdownLinkResolution: shortest
   contentIndex:
