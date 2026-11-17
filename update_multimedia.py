@@ -28,15 +28,13 @@ Indice di tutte le immagini presenti nel database:
 for folder, imgs in sorted(grouped_files.items()):
     markdown_content += f"\n### 📂 {folder}\n"
     for img in sorted(imgs):
-        # Definiamo il percorso relativo alla cartella multimedia nel vault
         if folder == "Radice Multimedia":
             link_path = f"_Multimedia/{img}"
         else:
             link_path = f"_Multimedia/{folder}/{img}"
         
-        # Usiamo l'embed nativo di Obsidian con il punto esclamativo e le doppie parentesi quadre
-        markdown_content += f"![[{link_path}]]\n"
-
+        # Link testuale pulito, cliccabile e senza anteprima pesante
+        markdown_content += f"- [[{link_path}|{img}]]\n"
 # Assicura che la cartella degli indici esista
 os.makedirs(os.path.dirname(index_path), exist_ok=True)
 
