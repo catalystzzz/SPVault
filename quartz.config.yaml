@@ -141,6 +141,8 @@ plugins:
     layout:
       position: right
       priority: 10
+    options:
+      excludeTags: ["tag", "tags", "MOC", "index", "Indice Immagini", "Indice per Tag"] /* Inserisci qui eventuali tag di sistema o generali da nascondere */
   - source: "@quartz-community/search"
     enabled: true
     layout:
