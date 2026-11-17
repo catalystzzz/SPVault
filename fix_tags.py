@@ -2,7 +2,7 @@ import os
 import re
 
 public_dir = "public"
-print("Correggendo i percorsi dei tag nei file HTML generati...")
+print("Scansione e correzione globale dei link dei tag in corso...")
 
 if os.path.exists(public_dir):
     count = 0
@@ -13,11 +13,10 @@ if os.path.exists(public_dir):
                 with open(path, "r", encoding="utf-8") as f:
                     content = f.read()
                 
-                # 1. Corregge i link assoluti completi con il dominio
-                content, c1 = re.subn(r'href=["\']https://catalystzzz\.github\.io/tags/([^"\']*)["\']', r'href="/SPVault/tags/\1"', content)
-                
-                # 2. Corregge i link relativi che partono dalla root
-                content, c2 = re.subn(r'href=["\']?/tags/([^"\']*)["\']', r'href="/SPVault/tags/\1"', content)
+                # Sostituisce qualsiasi link che punta a /tags/ o a domini senza /SPVault/tags/
+                # Copre sia i link assoluti che quelli relativi generati nelle pagine dei tag
+                content, c1 = re.subn(r'href=["\'](?:https://catalystzzz\.github\.io)?/tags/([^"\']*)["\']', r'href="/SPVault/tags/\1"', content)
+                content, c2 = re.subn(r'href=["\'](?:\.\./)+tags/([^"\']*)["\']', r'href="/SPVault/tags/\1"', content)
                 
                 total_changes = c1 + c2
                 if total_changes > 0:
@@ -25,6 +24,6 @@ if os.path.exists(public_dir):
                         f.write(content)
                     count += total_changes
                     
-    print(f"[✅] Correzione completata! Aggiornati {count} link di tag.")
+    print(f"[✅] Correzione completata! Aggiornati {count} link di tag in tutta la cartella public.")
 else:
     print("[❌] Attenzione: Cartella 'public' non trovata.")
