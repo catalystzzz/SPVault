@@ -265,17 +265,11 @@ layout:
       direction: row
       gap: 0.5rem
   byPageType:
-    "404":
-      positions:
-        beforeBody: []
-        left: []
-        right: []
     content:
       positions:
         beforeBody:
           - article-title
           - content-meta
-          - breadcrumbs
         left:
           - explorer
           - search
@@ -285,14 +279,8 @@ layout:
           - backlinks
           - recent-notes
     folder:
-      positions:
-        left:
-          - explorer
-          - search
+      exclude:
+        - reader-mode
     tag:
-      positions:
-        left:
-          - explorer
-          - search
-    canvas: {}
-    bases: {}
+      exclude:
+        - reader-mode
