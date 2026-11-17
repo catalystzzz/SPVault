@@ -43,7 +43,7 @@ configuration:
         highlight: rgba(88, 166, 255, 0.15)
         textHighlight: "#b3aa0288"
   links:
-    markdownLinkResolution: shortest
+    markdownLinkResolution: absolute
   contentIndex:
     enableSiteMap: true
     enableRSS: true
