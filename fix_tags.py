@@ -1,8 +1,22 @@
 import os
-import re
 
 public_dir = "public"
-print("Scansione e correzione globale dei link dei tag in corso...")
+print("Iniezione dello script di correzione tag in corso...")
+
+# Il blocchetto di codice che risolve i tag al volo nel browser
+js_snippet = """
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll('a[href*="/tags/"]').forEach(link => {
+        const href = link.getAttribute('href');
+        if (href && !href.includes('/SPVault/tags/')) {
+            const tagName = href.split('/tags/').pop();
+            link.setAttribute('href', `/SPVault/tags/${tagName}`);
+        }
+    });
+});
+</script>
+"""
 
 if os.path.exists(public_dir):
     count = 0
@@ -13,17 +27,13 @@ if os.path.exists(public_dir):
                 with open(path, "r", encoding="utf-8") as f:
                     content = f.read()
                 
-                # Sostituisce qualsiasi link che punta a /tags/ o a domini senza /SPVault/tags/
-                # Copre sia i link assoluti che quelli relativi generati nelle pagine dei tag
-                content, c1 = re.subn(r'href=["\'](?:https://catalystzzz\.github\.io)?/tags/([^"\']*)["\']', r'href="/SPVault/tags/\1"', content)
-                content, c2 = re.subn(r'href=["\'](?:\.\./)+tags/([^"\']*)["\']', r'href="/SPVault/tags/\1"', content)
-                
-                total_changes = c1 + c2
-                if total_changes > 0:
+                # Inserisce lo script prima della chiusura del body se non è già presente
+                if "SPVault/tags" not in content and "</body>" in content:
+                    content = content.replace("</body>", js_snippet + "\n</body>")
                     with open(path, "w", encoding="utf-8") as f:
                         f.write(content)
-                    count += total_changes
+                    count += 1
                     
-    print(f"[✅] Correzione completata! Aggiornati {count} link di tag in tutta la cartella public.")
+    print(f"[✅] Correzione applicata con successo a {count} file HTML!")
 else:
     print("[❌] Attenzione: Cartella 'public' non trovata.")
