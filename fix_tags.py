@@ -2,7 +2,7 @@ import os
 import re
 
 public_dir = "public"
-print("Applicazione del fix definitivo per i link dei tag...")
+print("Avvio della normalizzazione statica dei link dei tag...")
 
 if os.path.exists(public_dir):
     count = 0
@@ -13,10 +13,10 @@ if os.path.exists(public_dir):
                 with open(path, "r", encoding="utf-8") as f:
                     content = f.read()
                 
-                # Cattura qualsiasi variante di link ai tag (relativi con ../ o assoluti errati) 
-                # e li forza a puntare correttamente alla cartella /SPVault/tags/
+                # Cerca qualsiasi attributo href contenente un percorso di tag e lo riscrive in modo assoluto
+                # Intercetta sia i tag in formato cartella che gli alias generati da Quartz
                 new_content, changes = re.subn(
-                    r'href=["\'](?:https://[^"\']+)?(?:\.\./)*tags/([^"\']*)["\']', 
+                    r'href="[^"]*?(?:(?:\.\./)+|(?:\./)+)?tags/([^"/]+)"', 
                     r'href="/SPVault/tags/\1"', 
                     content
                 )
@@ -26,6 +26,16 @@ if os.path.exists(public_dir):
                         f.write(new_content)
                     count += changes
                     
-    print(f"[✅] Fatto! Corretti {count} link di tag in modo permanente.")
+                # Secondo passaggio di sicurezza per eventuali varianti con singolo apice o attributi alternativi (es. data-slug)
+                new_content_slug, slug_changes = re.subn(
+                    r'data-slug="(?:(?:\.\./)+|(?:\./)+)?tags/([^"]+)"', 
+                    r'data-slug="tags/\1"', 
+                    content
+                )
+                if slug_changes > 0 and new_content == content: # Evita doppie scritture se già gestito sopra
+                    with open(path, "w", encoding="utf-8") as f:
+                        f.write(new_content_slug)
+
+    print(f"[✅] Operazione completata: Corretti {count} collegamenti ai tag.")
 else:
     print("[❌] Attenzione: Cartella 'public' non trovata.")
