@@ -1,22 +1,8 @@
 import os
+import re
 
 public_dir = "public"
-print("Iniezione dello script di correzione tag in corso...")
-
-# Il blocchetto di codice che risolve i tag al volo nel browser
-js_snippet = """
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-    document.querySelectorAll('a[href*="/tags/"]').forEach(link => {
-        const href = link.getAttribute('href');
-        if (href && !href.includes('/SPVault/tags/')) {
-            const tagName = href.split('/tags/').pop();
-            link.setAttribute('href', `/SPVault/tags/${tagName}`);
-        }
-    });
-});
-</script>
-"""
+print("Correzione statica avanzata dei link dei tag in corso...")
 
 if os.path.exists(public_dir):
     count = 0
@@ -27,13 +13,18 @@ if os.path.exists(public_dir):
                 with open(path, "r", encoding="utf-8") as f:
                     content = f.read()
                 
-                # Inserisce lo script prima della chiusura del body se non è già presente
-                if "SPVault/tags" not in content and "</body>" in content:
-                    content = content.replace("</body>", js_snippet + "\n</body>")
+                # Intercetta qualsiasi combinazione di tag (relativi con ../ o assoluti) e la normalizza
+                new_content, changes = re.subn(
+                    r'href=["\'](?:https://catalystzzz\.github\.io)?(?:\.\./)*/?tags/([^"\']*)["\']', 
+                    r'href="/SPVault/tags/\1"', 
+                    content
+                )
+                
+                if changes > 0:
                     with open(path, "w", encoding="utf-8") as f:
-                        f.write(content)
-                    count += 1
+                        f.write(new_content)
+                    count += changes
                     
-    print(f"[✅] Correzione applicata con successo a {count} file HTML!")
+    print(f"[✅] Fatto! Corretti {count} link di tag staticamente.")
 else:
     print("[❌] Attenzione: Cartella 'public' non trovata.")
