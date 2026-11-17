@@ -1,4 +1,10 @@
 {
   "alwaysUpdateLinks": true,
-  "attachmentFolderPath": "Multimedia"
+  "attachmentFolderPath": "Multimedia",
+  "userIgnoreFilters": [
+    "docs/",
+    "node_modules/",
+    "public/",
+    "quartz/"
+  ]
 }
