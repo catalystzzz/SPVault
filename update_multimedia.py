@@ -28,14 +28,14 @@ Indice di tutte le immagini presenti nel database:
 for folder, imgs in sorted(grouped_files.items()):
     markdown_content += f"\n### 📂 {folder}\n"
     for img in sorted(imgs):
-        # Aggiungiamo /SPVault/ all'inizio per evitare il 404 e includiamo ! per renderla visibile
+        # Definiamo il percorso relativo alla cartella multimedia nel vault
         if folder == "Radice Multimedia":
-            link_path = f"/SPVault/_Multimedia/{img}"
+            link_path = f"_Multimedia/{img}"
         else:
-            link_path = f"/SPVault/_Multimedia/{folder}/{img}"
+            link_path = f"_Multimedia/{folder}/{img}"
         
-        # Usiamo il punto esclamativo iniziale ! per fare l'embed dell'immagine nel Markdown
-        markdown_content += f"![{img}]({link_path})\n"
+        # Usiamo l'embed nativo di Obsidian con il punto esclamativo e le doppie parentesi quadre
+        markdown_content += f"![[{link_path}]]\n"
 
 # Assicura che la cartella degli indici esista
 os.makedirs(os.path.dirname(index_path), exist_ok=True)
