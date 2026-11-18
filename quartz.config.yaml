@@ -205,6 +205,7 @@ plugins:
   - source: "@quartz-community/footer"
     enabled: true
     options:
+      text: This is a fan-made project and is not affiliated with Elementa. All trademarks are the property of their respective owners.
       links:
         GitHub: https://github.com/jackyzha0/quartz
         Discord Community: https://discord.gg/cRFFHYye7t
