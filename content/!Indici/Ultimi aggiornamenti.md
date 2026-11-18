@@ -4,6 +4,8 @@ title: Ultimi aggiornamenti
 
 Elenco dei file di contenuto modificati di recente nel vault:
 
+- `18/11/2026 12:09` — [[Personaggi/Tinsley/Tinsley Drip Marketing|Tinsley Drip Marketing]]
+- `17/11/2026 20:42` — [[Personaggi/Alf/Alf Drip Marketing|Alf Drip Marketing]]
 - `17/11/2026 14:36` — [[Post Ufficiali/Trailers/Presentazione Gioco/The Golden Age of Detectives|The Golden Age of Detectives]]
 - `17/11/2026 14:36` — [[Post Ufficiali/Trailers/Presentazione Gioco/Monotype Beta Test Trailer|Monotype Beta Test Trailer]]
 - `17/11/2026 14:36` — [[Post Ufficiali/Trailers/Presentazione Gioco/gamescom 2026 Special Trailer - The Price of Truth|gamescom 2026 Special Trailer - The Price of Truth]]
@@ -17,5 +19,3 @@ Elenco dei file di contenuto modificati di recente nel vault:
 - `17/11/2026 14:36` — [[Post Ufficiali/Eventi/Live Events/Thailand Gameshow 2026|Thailand Gameshow 2026]]
 - `17/11/2026 14:36` — [[Post Ufficiali/Eventi/Live Events/Japan EXPO 2026|Japan EXPO 2026]]
 - `17/11/2026 14:36` — [[Post Ufficiali/Eventi/Live Events/Gamescom 2026|Gamescom 2026]]
-- `17/11/2026 14:36` — [[Post Ufficiali/Eventi/Live Events/Anime EXPO 2026|Anime EXPO 2026]]
-- `17/11/2026 14:36` — [[Post Ufficiali/Festività/Halloween 2026|Halloween 2026]]

@@ -178,6 +178,7 @@ Elenco dinamico di tutti i contenuti del vault organizzati per tag:
 
 ### 🏷️ #ozschoolofmetallurgy
 - [[Personaggi/Cordelia/Cordelia Drip Marketing|Cordelia Drip Marketing]]
+- [[Personaggi/Tinsley/Tinsley Drip Marketing|Tinsley Drip Marketing]]
 
 ### 🏷️ #quartznet
 - [[Personaggi/Bentham/Betham Drip Marketing|Betham Drip Marketing]]
@@ -231,6 +232,9 @@ Elenco dinamico di tutti i contenuti del vault organizzati per tag:
 - [[Mappe/Footnotes/High Peers & Spinotrode|High Peers & Spinotrode]]
 - [[Personaggi/Captain Kaboom/Captain Kaboom Drip Marketing|Captain Kaboom Drip Marketing]]
 
+### 🏷️ #starstudent
+- [[Personaggi/Tinsley/Tinsley Drip Marketing|Tinsley Drip Marketing]]
+
 ### 🏷️ #stats
 - [[Fazioni/STATS/ATOTS Stats|ATOTS Stats]]
 - [[Fazioni/STATS/S.T.A.T.S|S.T.A.T.S]]
@@ -258,6 +262,9 @@ Elenco dinamico di tutti i contenuti del vault organizzati per tag:
 
 ### 🏷️ #thecornerclinic
 - [[Personaggi/Firtho/Firtho Drip Marketing|Firtho Drip Marketing]]
+
+### 🏷️ #tinsley
+- [[Personaggi/Tinsley/Tinsley Drip Marketing|Tinsley Drip Marketing]]
 
 ### 🏷️ #umi
 - [[Fazioni/RIVER CONSTABULARY/ATOTS River Constabulary|ATOTS River Constabulary]]

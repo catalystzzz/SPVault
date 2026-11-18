@@ -1,6 +1,6 @@
 {
   "alwaysUpdateLinks": true,
-  "attachmentFolderPath": "Multimedia",
+  "attachmentFolderPath": "_Multimedia",
   "userIgnoreFilters": [
     "docs/",
     "node_modules/",

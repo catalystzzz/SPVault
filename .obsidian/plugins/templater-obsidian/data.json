@@ -1,7 +1,7 @@
 {
   "data_version": 2,
   "command_timeout": 5,
-  "templates_folder": "Template",
+  "templates_folder": "content/Template",
   "templates_pairs": [],
   "trigger_on_file_creation_mode": "folder",
   "only_trigger_for_matching_files": false,

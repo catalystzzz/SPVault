@@ -49,6 +49,7 @@ Indice di tutte le immagini presenti nel database:
 - [[_Multimedia/Personaggi\Drip Marketing/Rex Drip Marketing.jpg|Rex Drip Marketing.jpg]]
 - [[_Multimedia/Personaggi\Drip Marketing/Sking Drip Marketing.jpg|Sking Drip Marketing.jpg]]
 - [[_Multimedia/Personaggi\Drip Marketing/Susan Drip Marketing.jpg|Susan Drip Marketing.jpg]]
+- [[_Multimedia/Personaggi\Drip Marketing/Tinsley Drip Marketing.webp|Tinsley Drip Marketing.webp]]
 
 ### 📂 Personaggi\Hidden Pages
 - [[_Multimedia/Personaggi\Hidden Pages/Alf Hidden pages.jpg|Alf Hidden pages.jpg]]
@@ -80,6 +81,7 @@ Indice di tutte le immagini presenti nel database:
 - [[_Multimedia/Personaggi\Profile Art/Rex Profile Art.jpg|Rex Profile Art.jpg]]
 - [[_Multimedia/Personaggi\Profile Art/Skink Profile Art.jpg|Skink Profile Art.jpg]]
 - [[_Multimedia/Personaggi\Profile Art/Susan Profile Art.jpg|Susan Profile Art.jpg]]
+- [[_Multimedia/Personaggi\Profile Art/Tinsley Profile Art.webp|Tinsley Profile Art.webp]]
 
 ### 📂 Web Event\Mystery Unveiled
 - [[_Multimedia/Web Event\Mystery Unveiled/benthamcard.webp|benthamcard.webp]]
