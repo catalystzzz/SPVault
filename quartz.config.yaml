@@ -273,11 +273,7 @@ layout:
         left:
           - explorer
           - search
-        right:
-          - graph
-          - table-of-contents
-          - backlinks
-          - recent-notes
+        right: []
     folder:
       exclude:
         - reader-mode
