@@ -1,5 +1,6 @@
 import os
 import datetime
+import subprocess
 
 content_dir = "content"
 index_path = "content/!Indici/Ultimi aggiornamenti.md"
@@ -9,6 +10,21 @@ file_list = []
 
 # Parole chiave o cartelle da escludere completamente
 excluded_keywords = ["indice", "ultimi aggiornamenti"]
+
+def get_git_mtime(filepath):
+    """Recupera la data dell'ultimo commit Git per il file, altrimenti usa mtime del file system."""
+    try:
+        # Chiede a git il timestamp Unix dell'ultimo commit per questo file
+        cmd = ["git", "log", "-1", "--format=%ct", str(filepath)]
+        result = subprocess.run(cmd, capture_output=True, text=True, check=True)
+        timestamp_str = result.stdout.strip()
+        if timestamp_str:
+            return float(timestamp_str)
+    except Exception:
+        pass
+    
+    # Fallback alla data di modifica del file system se git fallisce o non è tracciato
+    return os.path.getmtime(filepath)
 
 for root, dirs, files in os.walk(content_dir):
     # Salta completamente la cartella Multimedia se è presente nel percorso
@@ -29,7 +45,8 @@ for root, dirs, files in os.walk(content_dir):
             if os.path.abspath(file_path) == os.path.abspath(index_path):
                 continue
             
-            mtime = os.path.getmtime(file_path)
+            # Usa git log per la data reale, isolando il file dalle sincronizzazioni locali
+            mtime = get_git_mtime(file_path)
             rel_path = os.path.relpath(file_path, content_dir)
             link_target = os.path.splitext(rel_path)[0].replace("\\", "/")
             
@@ -57,4 +74,4 @@ for item in file_list[:max_files]:
 with open(index_path, "w", encoding="utf-8") as f:
     f.write(markdown_content)
 
-print("Ultimi aggiornamenti.md pulito e aggiornato con successo!")
+print("Ultimi aggiornamenti.md pulito e aggiornato con successo tramite Git log!")
