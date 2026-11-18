@@ -22,7 +22,7 @@ jobs:
         with:
           node-version: 22
 
-      # 1. Installa Python per far girare il tuo script di fix
+      # 1. Configura Python per far girare i tuoi script
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
@@ -31,12 +31,19 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      # 2. Compila il sito statico
+      # 2. Esegue i tuoi script personali per aggiornare gli indici nel vault
+      - name: Run Vault Index Scripts
+        run: |
+          python update_recent.py
+          python update_tags.py
+          python update_multimedia.py
+
+      # 3. Compila il sito statico con Quartz
       - name: Build Quartz
         run: npx quartz build
 
-      # 3. Esegue il tuo script Python sui file HTML generati
-      - name: Run Tag Fix Script
+      # 4. Esegue lo script di fix dei tag sui file HTML generati
+      - name: Fix Tags
         run: python fix_tags.py
 
       - name: Upload pages artifact
