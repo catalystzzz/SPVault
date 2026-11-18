@@ -6,6 +6,7 @@ echo ==========================================
 echo.
 
 git add .
+git add CNAME
 git commit -m "Aggiornamento note Obsidian (%date% %time:~0,5%)"
 git push origin main
 

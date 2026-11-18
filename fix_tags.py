@@ -17,7 +17,7 @@ if os.path.exists(public_dir):
                 # Intercetta sia i tag in formato cartella che gli alias generati da Quartz
                 new_content, changes = re.subn(
                     r'href="[^"]*?(?:(?:\.\./)+|(?:\./)+)?tags/([^"/]+)"', 
-                    r'href="/SPVault/tags/\1"', 
+                    r'href="/tags/\1"', 
                     content
                 )
                 
