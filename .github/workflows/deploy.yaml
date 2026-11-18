@@ -21,10 +21,23 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+      
+      # Aggiungiamo Python per far girare lo script di fix dei tag
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
       - name: Install dependencies
         run: npm ci
+      
       - name: Build Quartz
         run: npx quartz build
+      
+      # Esegue lo script Python direttamente sulla cartella public generata
+      - name: Fix Tags
+        run: python fix_tags.py
+
       - name: Upload pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
