@@ -206,7 +206,7 @@ plugins:
     enabled: true
     options: 
       links:
-        Copyright: This is a fan-made project and is not affiliated with Elementa. All trademarks are the property of their respective owners.
+        "This is a fan-made project and is not affiliated with Elementa. All trademarks are the property of their respective owners.": https://silveriumdb.cc
         GitHub: https://github.com/jackyzha0/quartz
         Discord Community: https://discord.gg/cRFFHYye7t
     layout:

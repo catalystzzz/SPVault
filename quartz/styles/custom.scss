@@ -1,3 +1,16 @@
 @use "./variables.scss" as *;
 
 // put your custom CSS here!
+
+footer {
+  ul {
+    li:first-child {
+      a {
+        color: var(--darkgray) !important;
+        text-decoration: none !important;
+        pointer-events: none !important;
+        cursor: default !important;
+      }
+    }
+  }
+}// put your custom CSS here!
