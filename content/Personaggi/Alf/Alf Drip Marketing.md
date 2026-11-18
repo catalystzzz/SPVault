@@ -2,7 +2,7 @@ Alf (Maid)
 
 —— A Story Truly Yours ——
 
--- "Got a lot on your mind, Master? Perhaps I can do some of it for you. Because I really really want to help." -- A somewhat clumsy maid who's always tagging along with the Detective. Unfortunately, she lacks any common sense, struggles to read the room, has terrible housekeeping skills, and also has the memory of a goldfish. She stands as the start to a story that's yet to unfold. "Who am I, really?", she often asks herself in the mirror. Yet her reflection has yet to yield her an answer.
+-- "Got a lot on your mind, Master? Perhaps I can do some of it for you. Because I really really want to help." -- A somewhat clumsy maid who's always tagging along with the Detective. Unfortunately, she lacks any common sense, struggles to read the room, has terrible housekeeping skills, and also has the memory of a goldfish. She stands as the start to a story that's yet to unfold. "Who am I, really?", she often asks herself in the mirror. Yet her reflection has yet to yield her an answer. -----
 
 ###### Traduzione
 
