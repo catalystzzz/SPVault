@@ -12,9 +12,9 @@ file_list = []
 excluded_keywords = ["indice", "ultimi aggiornamenti"]
 
 def get_git_mtime(filepath):
-    """Recupera la data dell'ultimo commit Git per il file, altrimenti usa mtime del file system."""
+    """Recupera la data dell'ultimo commit Git per il file usando il formato raw del timestamp."""
     try:
-        # Chiede a git il timestamp Unix dell'ultimo commit per questo file
+        # --format=%ct restituisce il timestamp Unix del commit (indipendente dal fuso orario e dalla copia locale)
         cmd = ["git", "log", "-1", "--format=%ct", str(filepath)]
         result = subprocess.run(cmd, capture_output=True, text=True, check=True)
         timestamp_str = result.stdout.strip()
@@ -23,8 +23,8 @@ def get_git_mtime(filepath):
     except Exception:
         pass
     
-    # Fallback alla data di modifica del file system se git fallisce o non è tracciato
-    return os.path.getmtime(filepath)
+    # Se il file non è tracciato da git, restituisce 0 così lo escludiamo o gestiamo
+    return 0
 
 for root, dirs, files in os.walk(content_dir):
     # Salta completamente la cartella Multimedia se è presente nel percorso
