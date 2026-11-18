@@ -8,7 +8,7 @@ configuration:
   analytics:
     provider: plausible
   locale: en-US
-  baseUrl: catalystzzz.github.io/SPVault
+  baseUrl: silveriumdb.cc
   ignorePatterns:
     - private
     - templates
