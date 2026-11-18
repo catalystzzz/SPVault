@@ -275,8 +275,18 @@ layout:
           - search
         right: []
     folder:
+      positions:
+        left:
+          - explorer
+          - search
+        right: []
       exclude:
         - reader-mode
     tag:
+      positions:
+        left:
+          - explorer
+          - search
+        right: []
       exclude:
         - reader-mode
