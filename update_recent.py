@@ -11,10 +11,20 @@ file_list = []
 # Parole chiave o cartelle da escludere completamente
 excluded_keywords = ["indice", "ultimi aggiornamenti"]
 
+# Ottiene l'insieme dei file con modifiche locali non ancora committate
+modified_files = set()
+try:
+    result = subprocess.run(["git", "status", "--porcelain"], capture_output=True, text=True, check=True)
+    for line in result.stdout.splitlines():
+        if len(line) > 3:
+            path = line[3:].strip().replace('"', '')
+            modified_files.add(os.path.normpath(path))
+except Exception:
+    pass
+
 def get_git_mtime(filepath):
-    """Recupera la data dell'ultimo commit Git per il file usando il formato raw del timestamp."""
+    """Recupera la data dell'ultimo commit Git per il file."""
     try:
-        # --format=%ct restituisce il timestamp Unix del commit (indipendente dal fuso orario e dalla copia locale)
         cmd = ["git", "log", "-1", "--format=%ct", str(filepath)]
         result = subprocess.run(cmd, capture_output=True, text=True, check=True)
         timestamp_str = result.stdout.strip()
@@ -22,8 +32,6 @@ def get_git_mtime(filepath):
             return float(timestamp_str)
     except Exception:
         pass
-    
-    # Se il file non è tracciato da git, restituisce 0 così lo escludiamo o gestiamo
     return 0
 
 for root, dirs, files in os.walk(content_dir):
@@ -45,8 +53,17 @@ for root, dirs, files in os.walk(content_dir):
             if os.path.abspath(file_path) == os.path.abspath(index_path):
                 continue
             
-            # Usa git log per la data reale, isolando il file dalle sincronizzazioni locali
-            mtime = get_git_mtime(file_path)
+            norm_path = os.path.normpath(file_path)
+            
+            # Se il file è stato modificato localmente adesso, usa l'orario di Windows; altrimenti usa Git log
+            if norm_path in modified_files:
+                mtime = os.path.getmtime(file_path)
+            else:
+                mtime = get_git_mtime(file_path)
+                # Fallback di sicurezza se git log fallisce
+                if mtime == 0:
+                    mtime = os.path.getmtime(file_path)
+
             rel_path = os.path.relpath(file_path, content_dir)
             link_target = os.path.splitext(rel_path)[0].replace("\\", "/")
             
@@ -74,4 +91,4 @@ for item in file_list[:max_files]:
 with open(index_path, "w", encoding="utf-8") as f:
     f.write(markdown_content)
 
-print("Ultimi aggiornamenti.md pulito e aggiornato con successo tramite Git log!")
+print("Ultimi aggiornamenti.md aggiornato correttamente (gestione ibrida Git + modifiche locali)!")
