@@ -11,14 +11,14 @@ file_list = []
 # Parole chiave o cartelle da escludere completamente
 excluded_keywords = ["indice", "ultimi aggiornamenti"]
 
-# Ottiene l'insieme dei file con modifiche locali non ancora committate
+# Ottiene l'insieme dei file con modifiche locali non ancora committate (normalizzando i path con "/")
 modified_files = set()
 try:
     result = subprocess.run(["git", "status", "--porcelain"], capture_output=True, text=True, check=True)
     for line in result.stdout.splitlines():
         if len(line) > 3:
-            path = line[3:].strip().replace('"', '')
-            modified_files.add(os.path.normpath(path))
+            path = line[3:].strip().replace('"', '').replace('\\', '/')
+            modified_files.add(path)
 except Exception:
     pass
 
@@ -53,14 +53,14 @@ for root, dirs, files in os.walk(content_dir):
             if os.path.abspath(file_path) == os.path.abspath(index_path):
                 continue
             
-            norm_path = os.path.normpath(file_path)
+            # Normalizza il percorso del file convertendo i backslash in slash per il confronto con Git
+            rel_file_path = os.path.relpath(file_path, ".").replace('\\', '/')
             
             # Se il file è stato modificato localmente adesso, usa l'orario di Windows; altrimenti usa Git log
-            if norm_path in modified_files:
+            if rel_file_path in modified_files:
                 mtime = os.path.getmtime(file_path)
             else:
                 mtime = get_git_mtime(file_path)
-                # Fallback di sicurezza se git log fallisce
                 if mtime == 0:
                     mtime = os.path.getmtime(file_path)
 
@@ -91,4 +91,4 @@ for item in file_list[:max_files]:
 with open(index_path, "w", encoding="utf-8") as f:
     f.write(markdown_content)
 
-print("Ultimi aggiornamenti.md aggiornato correttamente (gestione ibrida Git + modifiche locali)!")
+print("Ultimi aggiornamenti.md aggiornato correttamente con fix dei percorsi!")
