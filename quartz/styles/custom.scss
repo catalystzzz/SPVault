@@ -14,3 +14,63 @@ footer {
     }
   }
 }// put your custom CSS here!
+/* Sticker fisso nell'angolo in basso a destra su tutto il sito */
+body::after {
+  content: "";
+  position: fixed;
+  right: 22px;
+  bottom: 18px;
+  width: 96px;
+  height: 96px;
+  background-image: url("/_Multimedia/Stickers/V2/16.gif");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  pointer-events: none; /* non blocca i clic sotto di lui */
+  z-index: 20;
+  filter: drop-shadow(0 4px 8px rgba(42, 28, 25, 0.22));
+}
+
+@media (max-width: 1024px) {
+  body::after {
+    display: none;
+  }
+}
+/* Icone personalizzate per le cartelle nell'Explorer */
+.explorer .folder-container[data-folderpath="Personaggi"] > div > button::before,
+.explorer .folder-container[data-folderpath="Personaggi"] > div > a::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;
+  vertical-align: middle;
+  background-image: url("/_Multimedia/Stickers/V1/04.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+/* Piccolo chibi accanto al titolo "silveriumdb" in alto a sinistra */
+.page-title a::after {
+  content: "";
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+  margin-left: 8px;
+  vertical-align: middle;
+  background-image: url("/_Multimedia/Stickers/V2/13.gif");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* Chibi decorativo automatico in fondo a ogni articolo */
+article::after {
+  content: "";
+  display: block;
+  width: 76px;
+  height: 76px;
+  margin: 2rem auto 0.5rem auto;
+  background-image: url("/_Multimedia/Stickers/V2/06.gif");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
