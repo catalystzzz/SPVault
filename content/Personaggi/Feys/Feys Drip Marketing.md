@@ -12,7 +12,7 @@ Feys (Host) (Albergatrice)
 —— Una nave alla deriva —— -- 
 «Riposarsi a dovere magari non ti farà fare il salto di qualità, ma di certo è un gran piacere! Ecco, questo sì che è un modo di pensare che non ti porterà fuori strada!» -- 
 
-L’addetta di grado più basso presso l’Istituto, la Società e i Servizi per Domestiche; l’antitesi assoluta della domestica perfetta. Riviste di gossip, una valigia scintillante e uno straordinario talento nel riuscire a sopravvivere, giorno dopo giorno, sotto il sole. L’assenza di grandi ambizioni non implica una mancanza di entusiasmo, e c’è una certa astuzia nel saper scegliere quando è meglio non sapere troppo. Dopotutto, il valore di una persona non si misura in base alla sua obbedienza.
+L’addetta di grado più basso del [[MISS]]; l’antitesi assoluta della domestica perfetta. Riviste di gossip, una valigia scintillante e uno straordinario talento nel riuscire a sopravvivere, giorno dopo giorno, sotto il sole. L’assenza di grandi ambizioni non implica una mancanza di entusiasmo, e c’è una certa astuzia nel saper scegliere quando è meglio non sapere troppo. Dopotutto, il valore di una persona non si misura in base alla sua obbedienza.
 
 ###### Immagini
 

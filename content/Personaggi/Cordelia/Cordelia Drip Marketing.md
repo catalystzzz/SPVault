@@ -1,7 +1,7 @@
 —— Hard Times —— -- 
 "School's nothing but brick-brained teacher's pets, while the rest of the city's crawling with horrible, stinky adults! Argh! This place is so booooring!" -- 
 
-A troublesome pupil, a timid girl, an untamed rose, thorns and all. Garish clothes, sharp-tongued retorts, dressed to the nines for no one's approval but her own. Dogma is no substitute for truth, and right and wrong are not for grown-ups alone to decide. And thus she gathers her friends, and together they vault over the fences of convention.
+A troublesome pupil, a timid girl, an untamed rose, thorns and all. Garish clothes, sharp-tongued retorts, dressed to the nines for no one's approval but her own. [[Dogma]] is no substitute for truth, and right and wrong are not for grown-ups alone to decide. And thus she gathers her friends, and together they vault over the fences of convention.
 
 ###### Traduzione
 

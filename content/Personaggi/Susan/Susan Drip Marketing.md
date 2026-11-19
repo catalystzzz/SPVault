@@ -16,7 +16,7 @@ Una messaggera silenziosa, un uccello meccanico che reca ordini. Fedele ai desid
 
 ###### Immagini
 
-![[Susan Drip Marketing.jpg]]![[Susan Profile Art.jpg|309]]
+![[Susan Drip Marketing.jpg]]![[Susan Profile Art.jpg|640]]
 
 ###### Tags
 #susan #messenger #umi 

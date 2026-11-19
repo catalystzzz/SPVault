@@ -12,7 +12,7 @@ La Rosa come macchina da guerra
 
 -- "Cala il sipario; ed eccomi giunta a te. Dopo una lunga separazione, quanto sarà breve il nostro incontro?" 
 
--- Padrona della Midsummer Night's Ballroom (Sala da Ballo di Mezza Estate), è una ballerina che non si ferma mai. Cacciatrice e assassina. Una rosa cremisi che fiorisce in un terreno intriso di sangue; il suo splendore brilla attraverso un involucro irto di spine. 
+-- Padrona della [[Midsummer Night's Ballroom]] (Sala da Ballo di Mezza Estate), è una ballerina che non si ferma mai. Cacciatrice e assassina. Una rosa cremisi che fiorisce in un terreno intriso di sangue; il suo splendore brilla attraverso un involucro irto di spine. 
 
 Eppure, un pallido chiarore lunare e nebbie venefiche la avvolgono, lasciando cicatrici nella sua stessa anima. Nonostante il nome che richiama il rosso, il destino le ha riservato una sorte oscura e crudele. Solo nell'amore o nella morte le sarà concesso il perdono.
 

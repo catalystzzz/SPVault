@@ -9,7 +9,7 @@ Over time, the kindness that once ran in his blood cooled. Now, he lives among w
 —— La Lingua Melliflua —— --
 "Il mio nome è Skink, consulente dei Crag Edger. Sono specializzato nella mediazione di dispute interpersonali e... in altre faccende, decisamente meno nobili. Non vedo l'ora di lavorare con voi." --
 
-Questo rettile, proveniente da una terra lontana, è approdato a Silvernia dopo essere sopravvissuto a un brutale massacro. Per sua fortuna, è riuscito a tenere le sue scaglie lucenti al riparo dalla luce solare, sfruttando le lunghe ombre di Middensea.
+Questo rettile, proveniente da una terra lontana, è approdato a Silvernia dopo essere sopravvissuto a un brutale massacro. Per sua fortuna, è riuscito a tenere le sue scaglie lucenti al riparo dalla luce solare, sfruttando le lunghe ombre di [[Middensea]].
 
 Col passare del tempo, la benevolenza che un tempo gli scorreva nelle vene si è spenta. Ora vive tra creature a sangue caldo, servendosi di lame avvelenate e astuti stratagemmi per guadagnarsi da vivere.
 
