@@ -35,6 +35,8 @@ body::after {
   body::after {
     display: none;
   }
+
+/* Icone Dei PG a SX delle cartelle */
 }
 .explorer .folder-container[data-folderpath="personaggi"] a.folder-button::before,
 .explorer a.folder-button[href="/personaggi/"]::before {
@@ -44,7 +46,85 @@ body::after {
   height: 20px;
   margin-right: 6px;
   vertical-align: middle;
+  background-image: url("/static/V1/01.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* Icone cartelle principali nell'Explorer */
+.explorer a.folder-button[href="/!indici/"]::before,
+.explorer a.folder-button[href="/indici/"]::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;
+  vertical-align: middle;
+  background-image: url("/static/V1/03.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.explorer a.folder-button[href="/dizionario/"]::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;
+  vertical-align: middle;
+  background-image: url("/static/V1/10.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.explorer a.folder-button[href="/fazioni/"]::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;
+  vertical-align: middle;
   background-image: url("/static/V1/04.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.explorer a.folder-button[href="/mappe/"]::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;
+  vertical-align: middle;
+  background-image: url("/static/V1/05.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.explorer a.folder-button[href="/multimedia/"]::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;
+  vertical-align: middle;
+  background-image: url("/static/V1/06.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.explorer a.folder-button[href="/post-ufficiali/"]::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;
+  vertical-align: middle;
+  background-image: url("/static/V1/16.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
