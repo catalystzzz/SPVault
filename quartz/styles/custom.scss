@@ -37,8 +37,8 @@ body::after {
   }
 }
 /* Icone personalizzate per le cartelle nell'Explorer */
-.explorer .folder-container[data-folderpath="Personaggi"] > div > button::before,
-.explorer .folder-container[data-folderpath="Personaggi"] > div > a::before {
+.explorer .folder-container[data-folderpath="content/Personaggi"] > div > button::before,
+.explorer .folder-container[data-folderpath="content/Personaggi"] > div > a::before {
   content: "";
   display: inline-block;
   width: 20px;

@@ -10,7 +10,7 @@ Nel suo senso più ampio, si tratta di una qualsiasi convinzione sostenuta in mo
 
 di una religione, come l'ebraismo, il cristianesimo (cattolicesimo romano, protestantesimo) o l'islam;
 delle posizioni di un filosofo o di una scuola filosofica, come lo stoicismo o il marxismo;
-dei postulati o degli assiomi politici propri di sistemi di pensiero politico, quali il fascismo, il socialismo, il progressismo, il liberalismo o il conservatorismo.
+dei postulati o degli assiomi politici propri di sistemi di pensiero politico, quali il fascismo, il socialismo, il progressismo, il liberalismo o il conservatorismo
 
 ###### Tags
 
