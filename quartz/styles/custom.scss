@@ -36,9 +36,8 @@ body::after {
     display: none;
   }
 }
-/* Icone personalizzate per le cartelle nell'Explorer */
-.explorer .folder-container[data-folderpath="content/Personaggi"] > div > button::before,
-.explorer .folder-container[data-folderpath="content/Personaggi"] > div > a::before {
+.explorer .folder-container[data-folderpath^="personaggi"] a.folder-button::before,
+.explorer a.folder-button[href="/personaggi/"]::before {
   content: "";
   display: inline-block;
   width: 20px;
@@ -48,6 +47,7 @@ body::after {
   background-image: url("/static/V1/04.png");
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
 }
 /* Piccolo chibi accanto al titolo "silveriumdb" in alto a sinistra */
 .page-title a::after {
@@ -62,8 +62,8 @@ body::after {
   background-repeat: no-repeat;
 }
 
-/* Chibi decorativo automatico in fondo a ogni articolo */
-article::after {
+/* Mette 06.gif appena sopra il footer in fondo alla colonna centrale */
+.center::after {
   content: "";
   display: block;
   width: 76px;
