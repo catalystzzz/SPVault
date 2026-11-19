@@ -36,7 +36,7 @@ body::after {
     display: none;
   }
 }
-.explorer .folder-container[data-folderpath^="personaggi"] a.folder-button::before,
+.explorer .folder-container[data-folderpath="personaggi"] a.folder-button::before,
 .explorer a.folder-button[href="/personaggi/"]::before {
   content: "";
   display: inline-block;
