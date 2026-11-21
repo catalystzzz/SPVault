@@ -82,6 +82,74 @@ export default function SocialLinks(props: QuartzComponentProps) {
           <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
         </svg>
       </button>
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+(function() {
+  function ensureHomeNav() {
+    const explorerUl = document.querySelector(".explorer ul.explorer-ul");
+    if (!explorerUl) return;
+
+    const p = window.location.pathname.replace(/\\/index\\.html$/, "").replace(/\\/$/, "");
+    const isHome = p === "" || p === "/" || window.location.pathname === "/";
+
+    let homeLi = explorerUl.querySelector(".nav-home-item");
+    if (homeLi) {
+      const container = homeLi.querySelector(".folder-container");
+      const link = homeLi.querySelector("a.nav-home-link");
+      if (container && link) {
+        if (isHome) {
+          container.classList.add("is-active");
+          link.classList.add("active");
+        } else {
+          container.classList.remove("is-active");
+          link.classList.remove("active");
+        }
+      }
+      return;
+    }
+
+    homeLi = document.createElement("li");
+    homeLi.className = "nav-home-item";
+    homeLi.innerHTML = \`
+      <div class="folder-container \${isHome ? "is-active" : ""}">
+        <a href="/" class="folder-button nav-home-link \${isHome ? "active" : ""}">
+          <span>Home</span>
+        </a>
+      </div>
+    \`;
+
+    explorerUl.insertBefore(homeLi, explorerUl.firstChild);
+  }
+
+  document.addEventListener("nav", ensureHomeNav);
+  document.addEventListener("render", ensureHomeNav);
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", ensureHomeNav);
+  } else {
+    ensureHomeNav();
+  }
+
+  const observer = new MutationObserver(() => {
+    const explorerUl = document.querySelector(".explorer ul.explorer-ul");
+    if (explorerUl && !explorerUl.querySelector(".nav-home-item")) {
+      ensureHomeNav();
+    }
+  });
+
+  if (document.body) {
+    observer.observe(document.body, { childList: true, subtree: true });
+  } else {
+    document.addEventListener("DOMContentLoaded", () => {
+      if (document.body) {
+        observer.observe(document.body, { childList: true, subtree: true });
+      }
+    });
+  }
+})();
+`,
+        }}
+      />
     </div>
   )
 }
