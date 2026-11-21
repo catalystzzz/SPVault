@@ -146,6 +146,19 @@ export default function SocialLinks(props: QuartzComponentProps) {
       }
     });
   }
+
+  // Delegazione click: se si clicca sullo spazio vuoto del riquadro, attiva il link della cartella
+  document.addEventListener("click", function(e) {
+    const container = e.target.closest(".folder-container");
+    if (!container) return;
+    // Se il click è avvenuto sulla freccia per espandere/collassare, non intervenire
+    if (e.target.closest(".folder-icon")) return;
+
+    const link = container.querySelector("a.folder-button, a.nav-home-link");
+    if (link && e.target !== link && !link.contains(e.target)) {
+      link.click();
+    }
+  });
 })();
 `,
         }}

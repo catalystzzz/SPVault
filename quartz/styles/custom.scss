@@ -379,6 +379,8 @@ ul.overflow,
   transition: all 0.2s ease !important;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04) !important;
   box-sizing: border-box !important;
+  position: relative !important;
+  cursor: pointer !important;
 }
 
 .explorer ul.explorer-ul > li > .folder-container:hover {
@@ -396,7 +398,7 @@ ul.overflow,
   background: var(--light) !important;
 }
 
-/* 4. Il link del testo dentro il tasto */
+/* 4. Il link del testo dentro il tasto: stretched-link su tutto il riquadro */
 .explorer ul.explorer-ul > li > .folder-container a.folder-button,
 .explorer ul.explorer-ul > li > .folder-container button.folder-button {
   font-size: 0.95rem !important;
@@ -412,22 +414,35 @@ ul.overflow,
   padding: 0 !important;
 }
 
+/* Pseudo-elemento che estende l'area cliccabile del link a 360° su tutto il pulsante */
+.explorer ul.explorer-ul > li > .folder-container a.folder-button::after {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  z-index: 1 !important;
+  border-radius: 8px !important;
+}
+
 .explorer ul.explorer-ul > li > .folder-container:hover a.folder-button {
   color: var(--secondary) !important;
 }
 
-/* 5. Freccia per espandere/collassare (posizionata a destra) */
+/* 5. Freccia per espandere/collassare (z-index superiore per click indipendente) */
 .explorer ul.explorer-ul > li > .folder-container .folder-icon {
   order: 2 !important;
+  position: relative !important;
+  z-index: 10 !important;
   color: var(--darkgray) !important;
   cursor: pointer !important;
-  padding: 2px !important;
-  margin-left: 0.5rem !important;
-  transition: transform 0.2s ease, color 0.2s ease !important;
+  padding: 0.4rem 0.5rem !important;
+  margin: -0.4rem -0.25rem -0.4rem 0.5rem !important;
+  border-radius: 4px !important;
+  transition: transform 0.2s ease, color 0.2s ease, background 0.15s ease !important;
 }
 
-.explorer ul.explorer-ul > li > .folder-container:hover .folder-icon {
+.explorer ul.explorer-ul > li > .folder-container .folder-icon:hover {
   color: var(--secondary) !important;
+  background: rgba(201, 178, 155, 0.15) !important;
 }
 
 /* Nasconde la freccia se la cartella non ha elementi figli (pulsante ad azione diretta) */
@@ -573,54 +588,64 @@ body[data-slug="personaggi"] .section-ul {
 }
 
 .page-listing ul.section-ul {
-  display: grid !important;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)) !important;
-  gap: 1.25rem !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0.75rem !important;
   padding: 0 !important;
   margin: 1.25rem 0 2.5rem 0 !important;
   list-style: none !important;
+  width: 100% !important;
 }
 
 .page-listing li.section-li {
   background: var(--lightgray) !important;
   border: 1px solid var(--gray) !important;
-  border-radius: 10px !important;
-  padding: 1.25rem 1.4rem !important;
+  border-radius: 8px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+  position: relative !important;
+  overflow: hidden !important;
   transition: all 0.2s ease !important;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04) !important;
-  margin: 0 !important;
+  min-height: unset !important;
   display: flex !important;
   flex-direction: column !important;
-  justify-content: space-between !important;
-  min-height: 105px !important;
-  position: relative !important;
-  box-sizing: border-box !important;
 }
 
 .page-listing li.section-li:hover {
   border-color: var(--secondary) !important;
   background: var(--light) !important;
-  transform: translateY(-2px) !important;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08) !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08) !important;
 }
 
+/* Corpo principale della card (titolo a sinistra, badge/data a destra) */
 .page-listing li.section-li .section {
   display: flex !important;
   flex-direction: column !important;
-  height: 100% !important;
-  justify-content: space-between !important;
-  align-items: flex-start !important;
-  gap: 0.75rem !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  position: relative !important;
+}
+
+.page-listing li.section-li .meta {
+  display: none !important;
 }
 
 .page-listing li.section-li .desc {
   width: 100% !important;
+  box-sizing: border-box !important;
+  padding: 0.85rem 7.5rem 0.85rem 1.15rem !important;
+  margin: 0 !important;
 }
 
 .page-listing li.section-li .desc h3 {
   margin: 0 !important;
-  font-size: 1.12rem !important;
-  font-weight: 700 !important;
+  font-size: 1.02rem !important;
+  font-weight: 600 !important;
   line-height: 1.4 !important;
   text-align: left !important;
 }
@@ -628,37 +653,35 @@ body[data-slug="personaggi"] .section-ul {
 .page-listing li.section-li .desc h3 a {
   color: var(--dark) !important;
   text-decoration: none !important;
-  display: block !important;
+  display: inline !important;
   transition: color 0.15s ease !important;
 }
 
-/* Rende l'intero riquadro cliccabile */
+/* Rende l'intero corpo della card cliccabile come il link della nota/cartella */
 .page-listing li.section-li .desc h3 a::after {
   content: "" !important;
   position: absolute !important;
   inset: 0 !important;
-  border-radius: 10px !important;
+  z-index: 1 !important;
+  border-radius: 8px !important;
 }
 
 .page-listing li.section-li:hover .desc h3 a {
   color: var(--secondary) !important;
 }
 
-.page-listing li.section-li .meta {
-  font-size: 0.8rem !important;
-  color: var(--darkgray) !important;
-  margin: 0 0 0.35rem 0 !important;
-}
-
+/* Data in Note Recenti posizionata a destra in alto */
 .recent-date {
   font-size: 0.82rem !important;
   color: var(--darkgray) !important;
   display: inline-flex !important;
   align-items: center !important;
   gap: 0.35rem !important;
-  margin-top: 0.65rem !important;
-  position: relative !important;
+  position: absolute !important;
+  top: 0.85rem !important;
+  right: 1.15rem !important;
   z-index: 2 !important;
+  margin: 0 !important;
 }
 
 .recent-date span {
@@ -666,15 +689,53 @@ body[data-slug="personaggi"] .section-ul {
   letter-spacing: 0.02em !important;
 }
 
+/* Indicatore 'Espandi ›' per le CARTELLE posizionato a destra in alto */
+.page-listing li.section-li:has(a[href$="/"]) .section::after {
+  content: "Espandi ›" !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  font-size: 0.78rem !important;
+  font-weight: 600 !important;
+  color: var(--darkgray) !important;
+  letter-spacing: 0.03em !important;
+  padding: 0.2rem 0.6rem !important;
+  background: var(--light) !important;
+  border: 1px solid var(--gray) !important;
+  border-radius: 4px !important;
+  transition: all 0.15s ease !important;
+  position: absolute !important;
+  top: 0.75rem !important;
+  right: 1.15rem !important;
+  z-index: 2 !important;
+  margin: 0 !important;
+}
+
+.page-listing li.section-li:has(a[href$="/"]):hover .section::after {
+  color: var(--secondary) !important;
+  border-color: var(--secondary) !important;
+  background: var(--highlight) !important;
+  transform: translateX(2px) !important;
+}
+
+/* Sezione inferiore dedicata ai TAG all'interno del riquadro */
 .page-listing li.section-li ul.tags {
   display: flex !important;
   flex-wrap: wrap !important;
-  gap: 0.35rem !important;
-  padding: 0 !important;
-  margin: 0.85rem 0 0 0 !important;
+  align-items: center !important;
+  gap: 0.4rem !important;
+  margin: 0 !important;
+  padding: 0.45rem 1.15rem !important;
+  background: rgba(0, 0, 0, 0.22) !important;
+  border-top: 1px solid var(--gray) !important;
   list-style: none !important;
   position: relative !important;
   z-index: 2 !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+:root:not([saved-theme=dark]) .page-listing li.section-li ul.tags {
+  background: rgba(0, 0, 0, 0.035) !important;
 }
 
 .page-listing li.section-li ul.tags li {
@@ -687,34 +748,32 @@ body[data-slug="personaggi"] .section-ul {
   display: none !important;
 }
 
-/* Nasconde i tag sui riquadri delle CARTELLE (il cui link termina con '/') */
-.page-listing li.section-li:has(a[href$="/"]) ul.tags {
+.page-listing li.section-li ul.tags li a.tag-link {
+  font-size: 0.75rem !important;
+  line-height: 1.2 !important;
+  padding: 0.15rem 0.45rem !important;
+  border-radius: 4px !important;
+  background: var(--light) !important;
+  border: 1px solid var(--gray) !important;
+  color: var(--darkgray) !important;
+  transition: all 0.15s ease !important;
+  display: inline-block !important;
+}
+
+.page-listing li.section-li ul.tags li a.tag-link:hover {
+  color: var(--secondary) !important;
+  border-color: var(--secondary) !important;
+  background: var(--highlight) !important;
+}
+
+/* Nasconde la fascia tag se è vuota (es. cartelle o note senza tag) */
+.page-listing li.section-li ul.tags:empty,
+.page-listing li.section-li ul.tags:not(:has(li)) {
   display: none !important;
 }
 
-/* Indicatore chiaro di azione 'Espandi ›' per le CARTELLE */
-.page-listing li.section-li:has(a[href$="/"]) .section::after {
-  content: "Espandi ›";
-  display: inline-flex;
-  align-items: center;
-  font-size: 0.78rem;
-  font-weight: 600;
-  color: var(--darkgray);
-  letter-spacing: 0.03em;
-  margin-top: 0.75rem;
-  padding: 0.2rem 0.6rem;
-  background: var(--light);
-  border: 1px solid var(--gray);
-  border-radius: 4px;
-  transition: all 0.15s ease;
-  width: fit-content;
-}
-
-.page-listing li.section-li:has(a[href$="/"]):hover .section::after {
-  color: var(--secondary);
-  border-color: var(--secondary);
-  background: var(--highlight);
-  transform: translateX(2px);
+.page-listing li.section-li:has(a[href$="/"]) ul.tags {
+  display: none !important;
 }
 
 /* Disabilita anteprima popover sulle cartelle */
