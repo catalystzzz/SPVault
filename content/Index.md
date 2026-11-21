@@ -1,29 +1,50 @@
-Benvenuto nel mio database di **Silver Palace.**
-L'obiettivo di questo database è la raccolta di informazioni e foto per avere una panoramica completa e facilmente accessibile alle informazioni e contenuti del gioco legati alla trama.
+---
+title: silveriumdb
+---
 
-Consiglio di utilizzare il sistema ad hashtag per la ricerca di contenuti specifici, ma in generale cercare la parola che ti interessa dovrebbe darti tutti i risultati di cui hai bisogno.
+Benvenuto in **silveriumdb**, il database dedicato a **Silver Palace**.
+L'obiettivo di questo database è la raccolta di informazioni e foto per avere una panoramica completa e facilmente accessibile ai contenuti del gioco legati alla trama.
+
+Consiglio di utilizzare la **barra di ricerca in alto** o il sistema ad hashtag per la ricerca di contenuti specifici; in generale, cercare la parola che ti interessa ti restituirà subito tutti i risultati collegati.
 
 Tutti i contenuti presenti in questa Web Page derivano dagli account ufficiali di Silver Palace come https://www.youtube.com/@SilverPalace-Official e https://x.com/SilverPalace_EN o direttamente dal gioco e tutti i crediti dei contenuti di testo e multimediali vanno attribuiti a loro:
 **Questo è un progetto amatoriale e non è affiliato a ©Elementa . Tutti i marchi sono di proprietà dei rispettivi titolari.**
 
-- ENG Translation
+<div class="sp-hub-grid">
 
-Welcome to my **Silver Palace** database.
-The purpose of this database is to collect information and images, providing a comprehensive and easily accessible overview of the game’s story-related content.
+<a href="/note-recenti/" class="sp-hub-card">
+  <div class="sp-hub-title">Note Recenti</div>
+  <p class="sp-hub-desc">File, schede e documenti aggiunti o modificati di recente nel database.</p>
+</a>
 
-I recommend using the hashtag system to search for specific content; however, simply searching for a keyword should also yield all the results you need.
+<a href="/personaggi/" class="sp-hub-card">
+  <div class="sp-hub-title">Personaggi</div>
+  <p class="sp-hub-desc">Note, documenti ed appunti sui personaggi</p>
+</a>
 
-All content on this webpage is sourced from official Silver Palace accounts such as https://www.youtube.com/@SilverPalace-Official e https://x.com/SilverPalace_EN or directly from the game itself. Full credit for all text and multimedia content belongs to the respective creators.
-**This is a fan-made project and is not affiliated with ©Elementa. All trademarks are the property of their respective owners.**
+<a href="/fazioni/" class="sp-hub-card">
+  <div class="sp-hub-title">Fazioni</div>
+  <p class="sp-hub-desc">Organizzazioni e gruppi del mondo di gioco (MISS, River Constabulary, S.T.A.T.S., UMI...).</p>
+</a>
 
----------------------
+<a href="/mappe/" class="sp-hub-card">
+  <div class="sp-hub-title">Mappe & Aree</div>
+  <p class="sp-hub-desc">Informazioni, connessioni ed appunti sulle mappe e zone del gioco</p>
+</a>
 
-Se sei arrivato a questo database grazie ad una condivisone, approfitto per dirti che potrai trovare i miei contenuti su silver palace e titoli simili sui miei canali:
+<a href="/post-ufficiali/" class="sp-hub-card">
+  <div class="sp-hub-title">Post Ufficiali & Trailer</div>
+  <p class="sp-hub-desc">Presentazioni, video ufficiali e comunicazioni.</p>
+</a>
 
-- Youtube: https://www.youtube.com/@CatalystOnline
-- Twitch: https://www.twitch.tv/catalystonline 
+<a href="/_multimedia/" class="sp-hub-card">
+  <div class="sp-hub-title">Multimedia</div>
+  <p class="sp-hub-desc">Galleria di illustrazioni, drip marketing, artwork e materiali visivi ufficiali.</p>
+</a>
 
-E per restare aggiornato su tutto, puoi entrare nel mio server discord e selezionare il ruolo dedicato ai giochi che ti interessano
+<a href="/tag/" class="sp-hub-card">
+  <div class="sp-hub-title">Indice per Tag</div>
+  <p class="sp-hub-desc">Tutti i contenuti del database raggruppati per tag tematici.</p>
+</a>
 
-- Discord: [https://discord.gg/KAughr4AHc](https://discord.gg/KAughr4AHc "https://discord.gg/KAughr4AHc")
-
+</div>

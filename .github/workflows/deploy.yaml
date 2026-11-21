@@ -36,6 +36,7 @@ jobs:
       - name: Run Vault Index Scripts
         run: |
           python update_recent.py
+          python update_roster.py
           python update_tags.py
           python update_multimedia.py
 

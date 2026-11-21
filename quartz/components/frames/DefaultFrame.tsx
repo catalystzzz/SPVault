@@ -1,5 +1,7 @@
 import { PageFrame, PageFrameProps } from "./types"
 import HeaderConstructor from "../Header"
+import SocialLinks from "../SocialLinks"
+import ImageLightbox from "../ImageLightbox"
 
 const Header = HeaderConstructor()
 
@@ -28,6 +30,7 @@ export const DefaultFrame: PageFrame = {
           {left.map((BodyComponent) => (
             <BodyComponent {...componentData} />
           ))}
+          <SocialLinks {...componentData} />
         </div>
         <div class="center">
           <div class="page-header">
@@ -58,6 +61,7 @@ export const DefaultFrame: PageFrame = {
         {footer.map((FooterComponent) => (
           <FooterComponent {...componentData} />
         ))}
+        <ImageLightbox {...componentData} />
       </>
     )
   },

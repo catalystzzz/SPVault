@@ -92,6 +92,11 @@ export default (() => {
         <link rel="icon" href={iconPath} />
         <meta name="description" content={description} />
         <meta name="generator" content="Quartz" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){let t=localStorage.getItem("theme");if(!t){t="dark";try{localStorage.setItem("theme","dark");}catch(e){}}document.documentElement.setAttribute("saved-theme",t);document.documentElement.classList.add("theme-"+t);})();`,
+          }}
+        />
 
         {css.map((resource) => CSSResourceToStyleElement(resource, true))}
         {js

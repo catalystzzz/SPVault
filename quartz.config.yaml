@@ -1,4 +1,4 @@
-z# yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
+# yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
   pageTitle: silveriumdb
   pageTitleSuffix: ""
@@ -23,25 +23,25 @@ configuration:
       code: IBM Plex Mono
     colors:
       lightMode:
-        light: "#F6EFE4"
-        lightgray: "#EDE2D2"
-        gray: "#D4C2AB"
-        darkgray: "#5A463E"
-        dark: "#2A1C19"
-        secondary: "#A62C2B"
-        tertiary: "#B87333"
-        highlight: rgba(166, 44, 43, 0.11)
-        textHighlight: "#B8733340"
+        light: "#FFFFFF"
+        lightgray: "#F4F4F6"
+        gray: "#E4E4E7"
+        darkgray: "#52525B"
+        dark: "#18181B"
+        secondary: "#991B1B"
+        tertiary: "#71717A"
+        highlight: "rgba(153, 27, 27, 0.08)"
+        textHighlight: "rgba(153, 27, 27, 0.15)"
       darkMode:
-        light: "#1B1312"
-        lightgray: "#241918"
-        gray: "#47322F"
-        darkgray: "#C9B5A8"
-        dark: "#F3E8DC"
-        secondary: "#E05A4F"
-        tertiary: "#D49452"
-        highlight: rgba(224, 90, 79, 0.16)
-        textHighlight: "#D4945247"
+        light: "#12141A"
+        lightgray: "#1B1E26"
+        gray: "#2D323E"
+        darkgray: "#A1A9B8"
+        dark: "#ECEFF4"
+        secondary: "#C9B29B"
+        tertiary: "#8E9BAE"
+        highlight: "rgba(201, 178, 155, 0.12)"
+        textHighlight: "rgba(201, 178, 155, 0.2)"
   links:
     markdownLinkResolution: shortest
   contentIndex:
@@ -71,7 +71,7 @@ plugins:
   - source: "@quartz-community/obsidian-flavored-markdown"
     enabled: true
     options:
-      enableInHtmlEmbed: false
+      enableInHtmlEmbed: true
       enableCheckbox: true
     order: 40
   - source: "@quartz-community/table-of-contents"
@@ -120,6 +120,8 @@ plugins:
     enabled: true
   - source: "@quartz-community/folder-page"
     enabled: true
+    options:
+      showFolderCount: false
   - source: "@quartz-community/tag-page"
     enabled: true
   - source: "@quartz-community/explorer"
@@ -147,10 +149,7 @@ plugins:
     enabled: true
     layout:
       position: left
-      priority: 20
-      group: toolbar
-      groupOptions:
-        grow: true
+      priority: 25
   - source: "@quartz-community/backlinks"
     enabled: false
     layout:
@@ -183,7 +182,7 @@ plugins:
       priority: 30
       group: toolbar
   - source: "@quartz-community/reader-mode"
-    enabled: true
+    enabled: false
     layout:
       position: left
       priority: 35
@@ -266,26 +265,14 @@ layout:
   byPageType:
     content:
       positions:
-        beforeBody:
-          - article-title
-          - content-meta
-        left:
-          - explorer
-          - search
         right: []
     folder:
       positions:
-        left:
-          - explorer
-          - search
         right: []
       exclude:
         - reader-mode
     tag:
       positions:
-        left:
-          - explorer
-          - search
         right: []
       exclude:
         - reader-mode

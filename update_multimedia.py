@@ -1,8 +1,8 @@
 import os
 
-# Aggiornato con il trattino basso per puntare alla cartella nascosta dall'Explorer
-multimedia_dir = "content/_Multimedia" 
-index_path = "content/!Indici/Indice Immagini.md"
+script_dir = os.path.dirname(os.path.abspath(__file__))
+multimedia_dir = os.path.join(script_dir, "content", "_Multimedia")
+index_path = os.path.join(multimedia_dir, "index.md")
 
 valid_extensions = (".png", ".jpg", ".jpeg", ".gif", ".webp", ".svg")
 grouped_files = {}
@@ -18,20 +18,21 @@ for root, dirs, files in os.walk(multimedia_dir):
         grouped_files[subfolder].extend(imgs)
 
 markdown_content = """---
-title: Indice Immagini
+title: Multimedia
 ---
 
-Indice di tutte le immagini presenti nel database:
+Raccolta dei file multimediali presenti nel database:
 
 """
 
 for folder, imgs in sorted(grouped_files.items()):
-    markdown_content += f"\n### 📂 {folder}\n"
+    clean_folder = folder.replace("\\", "/")
+    markdown_content += f"\n### 📂 {clean_folder}\n"
     for img in sorted(imgs):
         if folder == "Radice Multimedia":
             link_path = f"_Multimedia/{img}"
         else:
-            link_path = f"_Multimedia/{folder}/{img}"
+            link_path = f"_Multimedia/{clean_folder}/{img}"
         
         # Link testuale pulito, cliccabile e senza anteprima pesante
         markdown_content += f"- [[{link_path}|{img}]]\n"
