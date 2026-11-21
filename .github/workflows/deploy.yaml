@@ -35,6 +35,7 @@ jobs:
       # 2. Esegue i tuoi script personali per aggiornare gli indici nel vault
       - name: Run Vault Index Scripts
         run: |
+          python ensure_empty_folders.py
           python update_recent.py
           python update_roster.py
           python update_tags.py

@@ -5,6 +5,7 @@ cd /d "%~dp0"
 echo =======================================================
 echo   1/2 - Aggiornamento automatico pagine e indici...
 echo =======================================================
+python ensure_empty_folders.py
 python update_recent.py
 python update_roster.py
 python update_tags.py

@@ -179,7 +179,7 @@ Elenco dinamico di tutti i contenuti del vault organizzati per tag:
 - [[Personaggi/Red Rose/Red Rose Drip Marketing|Red Rose Drip Marketing]]
 
 ### #miss
-- [[Fazioni/MISS/MISS|MISS]]
+- [[Fazioni/MISS/Acronimo MISS|Acronimo MISS]]
 - [[Personaggi/Alf/Alf Drip Marketing|Alf Drip Marketing]]
 - [[Personaggi/Argos/Argos Drip Marketing|Argos Drip Marketing]]
 - [[Personaggi/Feys/Feys Drip Marketing|Feys Drip Marketing]]
@@ -258,7 +258,7 @@ Elenco dinamico di tutti i contenuti del vault organizzati per tag:
 
 ### #stats
 - [[Fazioni/STATS/ATOTS Stats|ATOTS Stats]]
-- [[Fazioni/STATS/S.T.A.T.S|S.T.A.T.S]]
+- [[Fazioni/STATS/Acronimo STATS|Acronimo STATS]]
 - [[Personaggi/Detective/Detective Drip Marketing (F)|Detective Drip Marketing (F)]]
 - [[Personaggi/Detective/Detective Drip Marketing (M)|Detective Drip Marketing (M)]]
 - [[Personaggi/Firtho/Firtho Drip Marketing|Firtho Drip Marketing]]
@@ -289,7 +289,7 @@ Elenco dinamico di tutti i contenuti del vault organizzati per tag:
 
 ### #umi
 - [[Fazioni/RIVER CONSTABULARY/ATOTS River Constabulary|ATOTS River Constabulary]]
-- [[Fazioni/UMI/UMI|UMI]]
+- [[Fazioni/UMI/Acronimo UMI|Acronimo UMI]]
 - [[Personaggi/Bentham/Bentham Hidden Pages|Bentham Hidden Pages]]
 - [[Personaggi/Captain Kaboom/Captain Kaboom Drip Marketing|Captain Kaboom Drip Marketing]]
 - [[Personaggi/Susan/Susan Drip Marketing|Susan Drip Marketing]]

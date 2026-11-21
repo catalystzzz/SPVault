@@ -1328,6 +1328,125 @@ a[href*="/_multimedia/"] {
   cursor: pointer !important;
 }
 
+/* ========================================================
+   RICERCA COMPATTA E OTTIMIZZATA (DESKTOP E MOBILE)
+   ======================================================== */
+/* Sfondo oscurato con blur per far risaltare il modale */
+.search > .search-container {
+  background: rgba(10, 12, 16, 0.78) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+}
+
+/* Barra di input ingrandita: bordino di rilievo e sfondo differenziato */
+.search > .search-container > .search-space > input {
+  background: var(--lightgray) !important;
+  border: 1px solid var(--gray) !important;
+  border-radius: 8px !important;
+  color: var(--dark) !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4) !important;
+  padding: 0.75rem 1.15rem !important;
+  font-size: 1.05rem !important;
+  transition: all 0.2s ease !important;
+}
+
+.search > .search-container > .search-space > input:focus {
+  border-color: var(--secondary) !important;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5), 0 0 0 1px var(--secondary) !important;
+}
+
+/* Riquadro dei risultati con rilievo e bordino elegante */
+.search > .search-container > .search-space > .search-layout {
+  background: var(--light) !important;
+  border: 1px solid var(--gray) !important;
+  border-radius: 10px !important;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.5) !important;
+  overflow: hidden !important;
+}
+
+/* Contenitore lista risultati più proporzionato su Desktop */
+.search > .search-container > .search-space > .search-layout[data-preview] > .results-container {
+  flex: 0 0 min(38%, 420px) !important;
+}
+
+/* Scheda del singolo risultato compatta */
+.search > .search-container > .search-space > .search-layout > .results-container .result-card {
+  padding: 0.55rem 0.85rem !important;
+  border-bottom: 1px solid var(--gray) !important;
+  transition: all 0.15s ease !important;
+}
+
+.search > .search-container > .search-space > .search-layout > .results-container .result-card:hover,
+.search > .search-container > .search-space > .search-layout > .results-container .result-card:focus,
+.search > .search-container > .search-space > .search-layout > .results-container .result-card.focus {
+  background: var(--lightgray) !important;
+}
+
+/* Titolo della nota compatto e pulito */
+.search > .search-container > .search-space > .search-layout > .results-container .result-card > h3 {
+  font-size: 0.92rem !important;
+  font-weight: 700 !important;
+  line-height: 1.25 !important;
+  color: var(--secondary) !important;
+  margin: 0 !important;
+}
+
+/* Evita testi giganteschi e muri di testo: estratto conciso a 1 riga */
+.search > .search-container > .search-space > .search-layout > .results-container .result-card > p.card-description {
+  font-size: 0.78rem !important;
+  line-height: 1.3 !important;
+  color: var(--darkgray) !important;
+  margin: 0.2rem 0 0 0 !important;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 1 !important;
+  -webkit-box-orient: vertical !important;
+  overflow: hidden !important;
+}
+
+/* Tag all'interno dei risultati compatti */
+.search > .search-container > .search-space > .search-layout > .results-container .result-card > ul.tags {
+  margin-top: 0.25rem !important;
+  gap: 0.25rem !important;
+  display: flex !important;
+  flex-wrap: wrap !important;
+}
+
+.search > .search-container > .search-space > .search-layout > .results-container .result-card > ul.tags > li {
+  margin: 0 !important;
+}
+
+.search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > p {
+  padding: 0.08rem 0.35rem !important;
+  font-size: 0.7rem !important;
+  line-height: 1.15rem !important;
+  border-radius: 4px !important;
+}
+
+/* Su mobile: altezza lista aumentata per mostrare quante più note possibili */
+@media (max-width: 800px) {
+  .search > .search-container > .search-space {
+    width: 94% !important;
+    margin-top: 5vh !important;
+  }
+
+  .search > .search-container > .search-space > .search-layout[data-preview] > .results-container {
+    max-height: 75vh !important;
+  }
+
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card {
+    padding: 0.55rem 0.75rem !important;
+  }
+
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card > h3 {
+    font-size: 0.9rem !important;
+  }
+
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card > p.card-description {
+    font-size: 0.75rem !important;
+    -webkit-line-clamp: 1 !important;
+  }
+}
+
 
 
 
