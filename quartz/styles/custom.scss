@@ -766,14 +766,28 @@ body[data-slug="personaggi"] .section-ul {
   background: var(--highlight) !important;
 }
 
-/* Nasconde la fascia tag se è vuota (es. cartelle o note senza tag) */
-.page-listing li.section-li ul.tags:empty,
-.page-listing li.section-li ul.tags:not(:has(li)) {
+/* Nasconde la fascia tag SOLO per le CARTELLE (il cui link termina con '/') */
+.page-listing li.section-li:has(.desc a[href$="/"]) ul.tags {
   display: none !important;
 }
 
-.page-listing li.section-li:has(a[href$="/"]) ul.tags {
-  display: none !important;
+/* Per le NOTE senza tag: mantiene la fascia inferiore visibile con testo dedicato */
+.page-listing li.section-li:not(:has(.desc a[href$="/"])) ul.tags:empty,
+.page-listing li.section-li:not(:has(.desc a[href$="/"])) ul.tags:not(:has(li)) {
+  pointer-events: none !important;
+}
+
+.page-listing li.section-li:not(:has(.desc a[href$="/"])) ul.tags:empty::before,
+.page-listing li.section-li:not(:has(.desc a[href$="/"])) ul.tags:not(:has(li))::before {
+  content: "Non sono presenti tag specifici in questa nota" !important;
+  display: inline-block !important;
+  font-size: 0.75rem !important;
+  line-height: 1.2 !important;
+  padding: 0.15rem 0 !important;
+  border: 1px solid transparent !important;
+  font-style: italic !important;
+  color: var(--darkgray) !important;
+  opacity: 0.75 !important;
 }
 
 /* Disabilita anteprima popover sulle cartelle */
