@@ -4,6 +4,7 @@ import SocialLinks from "../SocialLinks"
 import ImageLightbox from "../ImageLightbox"
 import CharacterBanner from "../CharacterBanner"
 import BacklinksPanel from "../BacklinksPanel"
+import DatabaseEnhancements from "../DatabaseEnhancements"
 
 const Header = HeaderConstructor()
 
@@ -66,6 +67,7 @@ export const DefaultFrame: PageFrame = {
           <FooterComponent {...componentData} />
         ))}
         <ImageLightbox {...componentData} />
+        <DatabaseEnhancements {...componentData} />
       </>
     )
   },

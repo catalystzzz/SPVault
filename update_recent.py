@@ -8,10 +8,10 @@ script_dir = os.path.dirname(os.path.abspath(__file__))
 content_dir = os.path.join(script_dir, "content")
 index_path = os.path.join(content_dir, "Note Recenti", "index.md")
 content_index_path = os.path.join(script_dir, "public", "static", "contentIndex.json")
-max_files = 12
+max_files = 15
 
 file_list = []
-excluded_keywords = ["indice", "ultimi aggiornamenti", "note recenti", "index"]
+EXCLUDED_ROOT_DIRS = {".obsidian", "template", "_multimedia", "note recenti", "tag"}
 
 # Regex per estrarre i tag stile Obsidian
 tag_regex = re.compile(r'(?<!\S)#([a-zA-Z0-9_\-/]+)')
@@ -42,16 +42,28 @@ try:
 except Exception:
     pass
 
-def get_git_mtime(filepath):
+def build_git_mtime_map(repo_dir):
+    mtime_map = {}
     try:
-        cmd = ["git", "log", "-1", "--format=%ct", str(filepath)]
-        result = subprocess.run(cmd, capture_output=True, text=True, check=True, cwd=script_dir)
-        timestamp_str = result.stdout.strip()
-        if timestamp_str:
-            return float(timestamp_str)
+        cmd = ["git", "-c", "core.quotepath=false", "log", "--name-only", "--format=__TS__%ct", "content/"]
+        result = subprocess.run(cmd, capture_output=True, text=True, check=True, cwd=repo_dir, encoding="utf-8", errors="replace")
+        current_ts = 0.0
+        for line in result.stdout.splitlines():
+            line = line.strip()
+            if line.startswith("__TS__"):
+                try:
+                    current_ts = float(line[6:])
+                except ValueError:
+                    current_ts = 0.0
+            elif line:
+                norm = line.strip('"').replace("\\", "/")
+                if norm not in mtime_map and current_ts > 0:
+                    mtime_map[norm] = current_ts
     except Exception:
         pass
-    return 0
+    return mtime_map
+
+git_mtime_map = build_git_mtime_map(script_dir)
 
 def extract_tags(content):
     tags = []
@@ -93,18 +105,20 @@ def fallback_slugify(seg):
     return s
 
 for root, dirs, files in os.walk(content_dir):
-    if "_multimedia" in root.lower():
+    rel_dir = os.path.relpath(root, content_dir).replace("\\", "/")
+    dir_parts = [] if rel_dir == "." else rel_dir.split("/")
+    if any(p.lower() in EXCLUDED_ROOT_DIRS or p.startswith((".", "!")) for p in dir_parts):
         continue
-        
+
     for file in files:
         if file.endswith(".md"):
             file_base = os.path.splitext(file)[0]
             file_lower = file_base.lower()
-            
-            # 1. Ignora cartelle/indici esplicitamente esclusi
-            if any(exc in file_lower for exc in excluded_keywords):
+
+            # 1. Ignora pagine indice
+            if file_lower == "index":
                 continue
-                
+
             file_path = os.path.join(root, file)
             if os.path.abspath(file_path) == os.path.abspath(index_path):
                 continue
@@ -135,7 +149,7 @@ for root, dirs, files in os.walk(content_dir):
             if rel_file_path in modified_files:
                 mtime = os.path.getmtime(file_path)
             else:
-                mtime = get_git_mtime(file_path)
+                mtime = git_mtime_map.get(rel_file_path, 0)
                 if mtime == 0:
                     mtime = os.path.getmtime(file_path)
             

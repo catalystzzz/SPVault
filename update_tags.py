@@ -10,7 +10,14 @@ tag_dict = {}
 # Regex per trovare i tag in stile Obsidian (es. #lore, #gacha/zz_zero)
 tag_regex = re.compile(r'(?<!\S)#([a-zA-Z0-9_\-/]+)')
 
+EXCLUDED_DIRS = {".obsidian", "template", "_multimedia", "note recenti", "tag"}
+
 for root, dirs, files in os.walk(content_dir):
+    rel_dir = os.path.relpath(root, content_dir).replace("\\", "/")
+    dir_parts = [] if rel_dir == "." else rel_dir.split("/")
+    if any(p.lower() in EXCLUDED_DIRS or p.startswith(".") for p in dir_parts):
+        continue
+
     for file in files:
         if file.endswith(".md"):
             file_path = os.path.join(root, file)

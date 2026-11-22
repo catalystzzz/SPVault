@@ -150,5 +150,41 @@ Elenco dei contenuti modificati o aggiunti di recente nel database:
     </div>
   </div>
 </li>
+<li class="section-li">
+  <div class="section">
+    <div class="desc">
+      <h3><a href="/mappe/distretti-ed-aree-menzionate/midsummer-night's-ballroom" class="internal">Midsummer Night's Ballroom</a></h3>
+    </div>
+    <ul class="tags"><li><a class="internal tag-link" href="/tags/redrose">redrose</a></li></ul>
+    <div class="recent-date">
+      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="opacity: 0.7; vertical-align: middle; margin-right: 4px;"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect><line x1="16" x2="16" y1="2" y2="6"></line><line x1="8" x2="8" y1="2" y2="6"></line><line x1="3" x2="21" y1="10" y2="10"></line></svg>
+      <span>19/11/2026</span>
+    </div>
+  </div>
+</li>
+<li class="section-li">
+  <div class="section">
+    <div class="desc">
+      <h3><a href="/personaggi/cordelia/cordelia-drip-marketing" class="internal">Cordelia Drip Marketing</a></h3>
+    </div>
+    <ul class="tags"><li><a class="internal tag-link" href="/tags/cordelia">cordelia</a></li><li><a class="internal tag-link" href="/tags/delinquent">delinquent</a></li><li><a class="internal tag-link" href="/tags/ozschoolofmetallurgy">ozschoolofmetallurgy</a></li></ul>
+    <div class="recent-date">
+      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="opacity: 0.7; vertical-align: middle; margin-right: 4px;"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect><line x1="16" x2="16" y1="2" y2="6"></line><line x1="8" x2="8" y1="2" y2="6"></line><line x1="3" x2="21" y1="10" y2="10"></line></svg>
+      <span>19/11/2026</span>
+    </div>
+  </div>
+</li>
+<li class="section-li">
+  <div class="section">
+    <div class="desc">
+      <h3><a href="/personaggi/red-rose/red-rose-drip-marketing" class="internal">Red Rose Drip Marketing</a></h3>
+    </div>
+    <ul class="tags"><li><a class="internal tag-link" href="/tags/redrose">redrose</a></li><li><a class="internal tag-link" href="/tags/royaltyandaristocracy">royaltyandaristocracy</a></li><li><a class="internal tag-link" href="/tags/midsummernightsballroom">midsummernightsballroom</a></li></ul>
+    <div class="recent-date">
+      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="opacity: 0.7; vertical-align: middle; margin-right: 4px;"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect><line x1="16" x2="16" y1="2" y2="6"></line><line x1="8" x2="8" y1="2" y2="6"></line><line x1="3" x2="21" y1="10" y2="10"></line></svg>
+      <span>19/11/2026</span>
+    </div>
+  </div>
+</li>
 </ul>
 </div>

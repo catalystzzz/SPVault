@@ -1887,11 +1887,27 @@ article[data-quartz-component="ContentPage"] .markdown-preview-view p:has(> img:
     font-size: 0.78rem !important;
   }
 
-  .page-listing li.section-li:has(a[href$="/"]) .section::after {
+  .page-listing li.section-li:has(a[href$="/"]) .section {
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+  }
+
+  .page-listing li.section-li:has(a[href$="/"]) .desc {
+    flex: 1 0 100% !important;
+  }
+
+  .page-listing li.section-li:has(a[href$="/"]) .sp-folder-badge {
     order: 2 !important;
     position: static !important;
-    margin: 0 1rem 0.75rem 1rem !important;
-    align-self: flex-start !important;
+    margin: 0 0 0.75rem 1rem !important;
+  }
+
+  .page-listing li.section-li:has(a[href$="/"]) .section::after {
+    order: 3 !important;
+    position: static !important;
+    margin: 0 1rem 0.75rem 0.5rem !important;
+    align-self: center !important;
   }
 
   .page-listing li.section-li ul.tags {
@@ -1928,6 +1944,163 @@ article[data-quartz-component="ContentPage"] .markdown-preview-view p:has(> img:
     margin: 0.5rem 0 !important;
   }
 }
+
+/* ========================================================
+   7. SCALABILITÀ: BADGE CARTELLE, FILTRO RAPIDO & AUTO-TOC
+   ======================================================== */
+@media (min-width: 801px) {
+  .page-listing li.section-li:has(a[href$="/"]) .desc {
+    padding-right: 12rem !important;
+  }
+}
+
+.sp-folder-badge {
+  position: absolute;
+  top: 0.77rem;
+  right: 6.45rem;
+  z-index: 2;
+  font-size: 0.74rem;
+  font-weight: 600;
+  color: var(--darkgray);
+  background: var(--light);
+  border: 1px solid var(--gray);
+  padding: 0.18rem 0.5rem;
+  border-radius: 4px;
+  pointer-events: none;
+}
+
+.sp-folder-badge.is-empty {
+  opacity: 0.8;
+  font-style: italic;
+}
+
+.page-listing li.section-li.sp-folder-is-empty {
+  opacity: 0.74 !important;
+}
+
+.page-listing li.section-li.sp-folder-is-empty:hover {
+  opacity: 1 !important;
+}
+
+/* Barra filtro locale */
+.sp-filter-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin: 0.85rem 0 1rem 0;
+  padding: 0.5rem 0.85rem;
+  background: var(--lightgray);
+  border: 1px solid var(--gray);
+  border-radius: 8px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.sp-filter-bar:focus-within {
+  border-color: var(--secondary);
+  box-shadow: 0 0 0 1px var(--secondary);
+}
+
+.sp-filter-icon {
+  color: var(--darkgray);
+  flex-shrink: 0;
+}
+
+.sp-filter-bar:focus-within .sp-filter-icon {
+  color: var(--secondary);
+}
+
+.sp-filter-input {
+  flex: 1 1 auto;
+  min-width: 0;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--dark);
+  font-size: 0.92rem;
+  font-family: inherit;
+}
+
+.sp-filter-input::placeholder {
+  color: var(--darkgray);
+  opacity: 0.8;
+}
+
+.sp-filter-counter {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--darkgray);
+  background: var(--light);
+  border: 1px solid var(--gray);
+  padding: 0.12rem 0.5rem;
+  border-radius: 5px;
+  white-space: nowrap;
+}
+
+.sp-filter-empty {
+  padding: 1.25rem;
+  margin: 0.75rem 0 1.5rem 0;
+  text-align: center;
+  font-style: italic;
+  font-size: 0.92rem;
+  color: var(--darkgray);
+  background: var(--lightgray);
+  border: 1px dashed var(--gray);
+  border-radius: 8px;
+}
+
+/* Indice compatto automatico per note lunghe (>= 3 h2/h3) */
+.sp-inline-toc {
+  margin: 0.75rem 0 1.5rem 0;
+}
+
+.sp-inline-toc-list {
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0.75rem 1.15rem !important;
+  background: rgba(0, 0, 0, 0.18);
+  border-top: 1px solid var(--gray);
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+:root:not([saved-theme=dark]) .sp-inline-toc-list {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+.sp-inline-toc-list li {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.sp-inline-toc-list li::before {
+  display: none !important;
+}
+
+.sp-inline-toc-list li.is-sub {
+  padding-left: 1rem !important;
+}
+
+.sp-inline-toc-list a {
+  display: block;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--darkgray);
+  text-decoration: none !important;
+  padding: 0.2rem 0;
+  transition: color 0.15s ease;
+}
+
+.sp-inline-toc-list a:hover {
+  color: var(--secondary);
+}
+
+.sp-filter-hidden,
+.page-listing li.section-li.sp-filter-hidden,
+body[data-slug="tag/index"] article h3 + ul.sp-filter-hidden {
+  display: none !important;
+}
+
 
 
 
