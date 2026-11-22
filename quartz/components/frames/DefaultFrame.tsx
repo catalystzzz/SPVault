@@ -5,6 +5,7 @@ import ImageLightbox from "../ImageLightbox"
 import CharacterBanner from "../CharacterBanner"
 import BacklinksPanel from "../BacklinksPanel"
 import DatabaseEnhancements from "../DatabaseEnhancements"
+import ComparePanel from "../ComparePanel"
 
 const Header = HeaderConstructor()
 
@@ -68,6 +69,7 @@ export const DefaultFrame: PageFrame = {
         ))}
         <ImageLightbox {...componentData} />
         <DatabaseEnhancements {...componentData} />
+        <ComparePanel {...componentData} />
       </>
     )
   },
