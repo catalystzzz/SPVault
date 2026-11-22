@@ -2,6 +2,8 @@ import { PageFrame, PageFrameProps } from "./types"
 import HeaderConstructor from "../Header"
 import SocialLinks from "../SocialLinks"
 import ImageLightbox from "../ImageLightbox"
+import CharacterBanner from "../CharacterBanner"
+import BacklinksPanel from "../BacklinksPanel"
 
 const Header = HeaderConstructor()
 
@@ -45,9 +47,11 @@ export const DefaultFrame: PageFrame = {
               ))}
             </div>
           </div>
+          <CharacterBanner {...componentData} />
           <Content {...componentData} />
           <hr />
           <div class="page-footer">
+            <BacklinksPanel {...componentData} />
             {afterBody.map((BodyComponent) => (
               <BodyComponent {...componentData} />
             ))}

@@ -2,7 +2,88 @@
 title: Indice per Tag
 ---
 
-Elenco dinamico di tutti i contenuti del vault organizzati per tag:
+Elenco dinamico di tutti i contenuti del vault organizzati per tag (75 tag totali):
+
+<details class="sp-tag-cloud-box">
+  <summary><span class="sp-media-folder-name">Indice rapido per Tag</span><span class="sp-media-count">75 tag</span></summary>
+  <div class="sp-tag-cloud">
+  <a href="#airshipincident" class="sp-tag-cloud-pill" data-no-popover="true">#airshipincident<span class="sp-tag-count">1</span></a>
+  <a href="#alf" class="sp-tag-cloud-pill" data-no-popover="true">#alf<span class="sp-tag-count">3</span></a>
+  <a href="#apprentice" class="sp-tag-cloud-pill" data-no-popover="true">#apprentice<span class="sp-tag-count">1</span></a>
+  <a href="#arena" class="sp-tag-cloud-pill" data-no-popover="true">#arena<span class="sp-tag-count">1</span></a>
+  <a href="#argos" class="sp-tag-cloud-pill" data-no-popover="true">#argos<span class="sp-tag-count">2</span></a>
+  <a href="#author" class="sp-tag-cloud-pill" data-no-popover="true">#author<span class="sp-tag-count">1</span></a>
+  <a href="#bee" class="sp-tag-cloud-pill" data-no-popover="true">#bee<span class="sp-tag-count">1</span></a>
+  <a href="#bentham" class="sp-tag-cloud-pill" data-no-popover="true">#bentham<span class="sp-tag-count">3</span></a>
+  <a href="#captainkaboom" class="sp-tag-cloud-pill" data-no-popover="true">#captainkaboom<span class="sp-tag-count">2</span></a>
+  <a href="#chiefinspector" class="sp-tag-cloud-pill" data-no-popover="true">#chiefinspector<span class="sp-tag-count">1</span></a>
+  <a href="#cinderella" class="sp-tag-cloud-pill" data-no-popover="true">#cinderella<span class="sp-tag-count">1</span></a>
+  <a href="#cognitosea" class="sp-tag-cloud-pill" data-no-popover="true">#cognitosea<span class="sp-tag-count">1</span></a>
+  <a href="#cordelia" class="sp-tag-cloud-pill" data-no-popover="true">#cordelia<span class="sp-tag-count">1</span></a>
+  <a href="#corruzione" class="sp-tag-cloud-pill" data-no-popover="true">#corruzione<span class="sp-tag-count">1</span></a>
+  <a href="#cragedgers" class="sp-tag-cloud-pill" data-no-popover="true">#cragedgers<span class="sp-tag-count">1</span></a>
+  <a href="#crown" class="sp-tag-cloud-pill" data-no-popover="true">#crown<span class="sp-tag-count">1</span></a>
+  <a href="#cynthia" class="sp-tag-cloud-pill" data-no-popover="true">#cynthia<span class="sp-tag-count">5</span></a>
+  <a href="#delinquent" class="sp-tag-cloud-pill" data-no-popover="true">#delinquent<span class="sp-tag-count">1</span></a>
+  <a href="#detective" class="sp-tag-cloud-pill" data-no-popover="true">#detective<span class="sp-tag-count">10</span></a>
+  <a href="#doctor" class="sp-tag-cloud-pill" data-no-popover="true">#doctor<span class="sp-tag-count">1</span></a>
+  <a href="#doppelganger" class="sp-tag-cloud-pill" data-no-popover="true">#doppelganger<span class="sp-tag-count">1</span></a>
+  <a href="#eternalsummer" class="sp-tag-cloud-pill" data-no-popover="true">#eternalsummer<span class="sp-tag-count">1</span></a>
+  <a href="#fableborn" class="sp-tag-cloud-pill" data-no-popover="true">#fableborn<span class="sp-tag-count">1</span></a>
+  <a href="#fables" class="sp-tag-cloud-pill" data-no-popover="true">#fables<span class="sp-tag-count">1</span></a>
+  <a href="#fate" class="sp-tag-cloud-pill" data-no-popover="true">#fate<span class="sp-tag-count">1</span></a>
+  <a href="#feliana" class="sp-tag-cloud-pill" data-no-popover="true">#feliana<span class="sp-tag-count">1</span></a>
+  <a href="#feys" class="sp-tag-cloud-pill" data-no-popover="true">#feys<span class="sp-tag-count">1</span></a>
+  <a href="#firtho" class="sp-tag-cloud-pill" data-no-popover="true">#firtho<span class="sp-tag-count">2</span></a>
+  <a href="#goldbud" class="sp-tag-cloud-pill" data-no-popover="true">#goldbud<span class="sp-tag-count">1</span></a>
+  <a href="#gratia" class="sp-tag-cloud-pill" data-no-popover="true">#gratia<span class="sp-tag-count">4</span></a>
+  <a href="#gravekeeper" class="sp-tag-cloud-pill" data-no-popover="true">#gravekeeper<span class="sp-tag-count">1</span></a>
+  <a href="#grimm" class="sp-tag-cloud-pill" data-no-popover="true">#grimm<span class="sp-tag-count">2</span></a>
+  <a href="#grimreaper" class="sp-tag-cloud-pill" data-no-popover="true">#grimreaper<span class="sp-tag-count">1</span></a>
+  <a href="#gucia" class="sp-tag-cloud-pill" data-no-popover="true">#gucia<span class="sp-tag-count">2</span></a>
+  <a href="#halloween" class="sp-tag-cloud-pill" data-no-popover="true">#halloween<span class="sp-tag-count">1</span></a>
+  <a href="#highpeers" class="sp-tag-cloud-pill" data-no-popover="true">#highpeers<span class="sp-tag-count">1</span></a>
+  <a href="#host" class="sp-tag-cloud-pill" data-no-popover="true">#host<span class="sp-tag-count">1</span></a>
+  <a href="#houseluna" class="sp-tag-cloud-pill" data-no-popover="true">#houseluna<span class="sp-tag-count">1</span></a>
+  <a href="#huntersguild" class="sp-tag-cloud-pill" data-no-popover="true">#huntersguild<span class="sp-tag-count">2</span></a>
+  <a href="#incinerator" class="sp-tag-cloud-pill" data-no-popover="true">#incinerator<span class="sp-tag-count">1</span></a>
+  <a href="#ivorytower" class="sp-tag-cloud-pill" data-no-popover="true">#ivorytower<span class="sp-tag-count">2</span></a>
+  <a href="#journalist" class="sp-tag-cloud-pill" data-no-popover="true">#journalist<span class="sp-tag-count">1</span></a>
+  <a href="#lorin" class="sp-tag-cloud-pill" data-no-popover="true">#lorin<span class="sp-tag-count">2</span></a>
+  <a href="#maid" class="sp-tag-cloud-pill" data-no-popover="true">#maid<span class="sp-tag-count">1</span></a>
+  <a href="#mcbarley" class="sp-tag-cloud-pill" data-no-popover="true">#mcbarley<span class="sp-tag-count">1</span></a>
+  <a href="#messenger" class="sp-tag-cloud-pill" data-no-popover="true">#messenger<span class="sp-tag-count">1</span></a>
+  <a href="#middensea" class="sp-tag-cloud-pill" data-no-popover="true">#middensea<span class="sp-tag-count">2</span></a>
+  <a href="#midsummernightsballroom" class="sp-tag-cloud-pill" data-no-popover="true">#midsummernightsballroom<span class="sp-tag-count">1</span></a>
+  <a href="#miss" class="sp-tag-cloud-pill" data-no-popover="true">#miss<span class="sp-tag-count">4</span></a>
+  <a href="#morgane" class="sp-tag-cloud-pill" data-no-popover="true">#morgane<span class="sp-tag-count">2</span></a>
+  <a href="#morguestreet" class="sp-tag-cloud-pill" data-no-popover="true">#morguestreet<span class="sp-tag-count">1</span></a>
+  <a href="#ozschoolofmetallurgy" class="sp-tag-cloud-pill" data-no-popover="true">#ozschoolofmetallurgy<span class="sp-tag-count">2</span></a>
+  <a href="#pinchgatecemetery" class="sp-tag-cloud-pill" data-no-popover="true">#pinchgatecemetery<span class="sp-tag-count">2</span></a>
+  <a href="#quartznet" class="sp-tag-cloud-pill" data-no-popover="true">#quartznet<span class="sp-tag-count">1</span></a>
+  <a href="#queen" class="sp-tag-cloud-pill" data-no-popover="true">#queen<span class="sp-tag-count">6</span></a>
+  <a href="#queenassassination" class="sp-tag-cloud-pill" data-no-popover="true">#queenassassination<span class="sp-tag-count">2</span></a>
+  <a href="#reactor" class="sp-tag-cloud-pill" data-no-popover="true">#reactor<span class="sp-tag-count">1</span></a>
+  <a href="#redrose" class="sp-tag-cloud-pill" data-no-popover="true">#redrose<span class="sp-tag-count">5</span></a>
+  <a href="#rex" class="sp-tag-cloud-pill" data-no-popover="true">#rex<span class="sp-tag-count">2</span></a>
+  <a href="#riverconstabulary" class="sp-tag-cloud-pill" data-no-popover="true">#riverconstabulary<span class="sp-tag-count">3</span></a>
+  <a href="#royaltyandaristocracy" class="sp-tag-cloud-pill" data-no-popover="true">#royaltyandaristocracy<span class="sp-tag-count">3</span></a>
+  <a href="#secretary" class="sp-tag-cloud-pill" data-no-popover="true">#secretary<span class="sp-tag-count">1</span></a>
+  <a href="#silverium" class="sp-tag-cloud-pill" data-no-popover="true">#silverium<span class="sp-tag-count">2</span></a>
+  <a href="#skink" class="sp-tag-cloud-pill" data-no-popover="true">#skink<span class="sp-tag-count">2</span></a>
+  <a href="#spinotrodes" class="sp-tag-cloud-pill" data-no-popover="true">#spinotrodes<span class="sp-tag-count">2</span></a>
+  <a href="#starstudent" class="sp-tag-cloud-pill" data-no-popover="true">#starstudent<span class="sp-tag-count">1</span></a>
+  <a href="#stats" class="sp-tag-cloud-pill" data-no-popover="true">#stats<span class="sp-tag-count">7</span></a>
+  <a href="#strategist" class="sp-tag-cloud-pill" data-no-popover="true">#strategist<span class="sp-tag-count">1</span></a>
+  <a href="#superintendent" class="sp-tag-cloud-pill" data-no-popover="true">#superintendent<span class="sp-tag-count">1</span></a>
+  <a href="#susan" class="sp-tag-cloud-pill" data-no-popover="true">#susan<span class="sp-tag-count">1</span></a>
+  <a href="#teamkaboom" class="sp-tag-cloud-pill" data-no-popover="true">#teamkaboom<span class="sp-tag-count">2</span></a>
+  <a href="#technician" class="sp-tag-cloud-pill" data-no-popover="true">#technician<span class="sp-tag-count">1</span></a>
+  <a href="#thecornerclinic" class="sp-tag-cloud-pill" data-no-popover="true">#thecornerclinic<span class="sp-tag-count">1</span></a>
+  <a href="#tinsley" class="sp-tag-cloud-pill" data-no-popover="true">#tinsley<span class="sp-tag-count">1</span></a>
+  <a href="#umi" class="sp-tag-cloud-pill" data-no-popover="true">#umi<span class="sp-tag-count">5</span></a>
+  </div>
+</details>
 
 
 ### #airshipincident

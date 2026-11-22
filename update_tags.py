@@ -36,15 +36,32 @@ for root, dirs, files in os.walk(content_dir):
             except Exception as e:
                 print(f"Errore nella lettura di {file_path}: {e}")
 
+sorted_tags = sorted(tag_dict.keys(), key=lambda t: t.lower())
+
+cloud_pills = []
+for tag in sorted_tags:
+    anchor = re.sub(r'[^a-z0-9_-]+', '', tag.lower().replace(' ', '-'))
+    count = len(tag_dict[tag])
+    cloud_pills.append(
+        f'  <a href="#{anchor}" class="sp-tag-cloud-pill" data-no-popover="true">#{tag}<span class="sp-tag-count">{count}</span></a>'
+    )
+
 markdown_content = """---
 title: Indice per Tag
 ---
 
-Elenco dinamico di tutti i contenuti del vault organizzati per tag:
+Elenco dinamico di tutti i contenuti del vault organizzati per tag ({total_tags} tag totali):
 
-"""
+<details class="sp-tag-cloud-box">
+  <summary><span class="sp-media-folder-name">Indice rapido per Tag</span><span class="sp-media-count">{total_tags} tag</span></summary>
+  <div class="sp-tag-cloud">
+{cloud}
+  </div>
+</details>
 
-for tag in sorted(tag_dict.keys()):
+""".format(total_tags=len(sorted_tags), cloud="\n".join(cloud_pills))
+
+for tag in sorted_tags:
     markdown_content += f"\n### #{tag}\n"
     for link in sorted(tag_dict[tag]):
         file_name = os.path.basename(link)
