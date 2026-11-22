@@ -264,10 +264,40 @@ export default function DatabaseEnhancements({ allFiles }: QuartzComponentProps)
     preview.insertBefore(toc, preview.firstChild);
   }
 
+  function initTwitterEmbeds() {
+    const tweets = document.querySelectorAll("blockquote.twitter-tweet");
+    if (!tweets || tweets.length === 0) return;
+
+    const isDark = document.documentElement.getAttribute("saved-theme") === "dark";
+    for (const t of tweets) {
+      t.setAttribute("data-theme", isDark ? "dark" : "light");
+    }
+
+    if (window.twttr && window.twttr.widgets) {
+      window.twttr.widgets.load();
+      return;
+    }
+
+    if (!document.getElementById("sp-twitter-widgets-js")) {
+      const s = document.createElement("script");
+      s.id = "sp-twitter-widgets-js";
+      s.async = true;
+      s.src = "https://platform.twitter.com/widgets.js";
+      s.charset = "utf-8";
+      s.onload = function() {
+        if (window.twttr && window.twttr.widgets) {
+          window.twttr.widgets.load();
+        }
+      };
+      document.body.appendChild(s);
+    }
+  }
+
   function runEnhancements() {
     enhanceFolderBadges();
     initLocalFilter();
     initAutoToc();
+    initTwitterEmbeds();
   }
 
   document.addEventListener("DOMContentLoaded", runEnhancements);

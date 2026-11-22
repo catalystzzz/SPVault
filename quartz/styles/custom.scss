@@ -2101,6 +2101,30 @@ body[data-slug="tag/index"] article h3 + ul.sp-filter-hidden {
   display: none !important;
 }
 
+/* Embed Tweet / X (widgets.js + card fallback elegante) */
+blockquote.twitter-tweet.external-embed.twitter {
+  margin: 0.75rem 0 1.25rem 0 !important;
+  padding: 1rem 1.15rem !important;
+  background: var(--lightgray) !important;
+  border: 1px solid var(--gray) !important;
+  border-left: 3.5px solid var(--secondary) !important;
+  border-radius: 10px !important;
+  max-width: 550px !important;
+  font-size: 0.92rem !important;
+  line-height: 1.5 !important;
+  color: var(--dark) !important;
+}
+
+blockquote.twitter-tweet.external-embed.twitter p {
+  margin: 0 0 0.6rem 0 !important;
+}
+
+.twitter-tweet.twitter-tweet-rendered {
+  margin: 0.75rem 0 1.25rem 0 !important;
+  max-width: 550px !important;
+  width: 100% !important;
+}
+
 
 
 
