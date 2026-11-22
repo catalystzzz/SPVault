@@ -403,6 +403,7 @@ ul.overflow,
 .explorer ul.explorer-ul > li > .folder-container button.folder-button {
   font-size: 0.95rem !important;
   font-weight: 600 !important;
+  line-height: 1.5rem !important;
   color: var(--dark) !important;
   text-decoration: none !important;
   display: flex !important;
@@ -453,9 +454,13 @@ ul.overflow,
 /* 6. Sotto-elementi (le note dentro ciascuna cartella quando aperta) */
 .explorer ul.explorer-ul > li > .folder-outer {
   padding-left: 0.75rem !important;
-  margin-top: 0.35rem !important;
+  margin-top: 0 !important;
   border-left: 2px solid var(--gray) !important;
   margin-left: 0.5rem !important;
+}
+
+.explorer ul.explorer-ul > li > .folder-outer.open {
+  margin-top: 0.35rem !important;
 }
 
 .explorer ul.explorer-ul > li > .folder-outer ul.content {
@@ -689,25 +694,29 @@ body[data-slug="personaggi"] .section-ul {
   letter-spacing: 0.02em !important;
 }
 
-/* Indicatore 'Espandi ›' per le CARTELLE posizionato a destra in alto */
+/* Indicatore 'Espandi ›' per le CARTELLE (allineato via flex e cliccabile tramite link card sottostante) */
 .page-listing li.section-li:has(a[href$="/"]) .section::after {
   content: "Espandi ›" !important;
+  order: 3 !important;
+  flex-shrink: 0 !important;
   display: inline-flex !important;
   align-items: center !important;
+  height: 26px !important;
+  box-sizing: border-box !important;
   font-size: 0.78rem !important;
   font-weight: 600 !important;
+  line-height: 1 !important;
   color: var(--darkgray) !important;
   letter-spacing: 0.03em !important;
-  padding: 0.2rem 0.6rem !important;
+  padding: 0 0.6rem !important;
   background: var(--light) !important;
   border: 1px solid var(--gray) !important;
   border-radius: 4px !important;
   transition: all 0.15s ease !important;
-  position: absolute !important;
-  top: 0.75rem !important;
-  right: 1.15rem !important;
+  position: static !important;
   z-index: 2 !important;
   margin: 0 !important;
+  pointer-events: none !important;
 }
 
 .page-listing li.section-li:has(a[href$="/"]):hover .section::after {
@@ -1906,7 +1915,7 @@ article[data-quartz-component="ContentPage"] .markdown-preview-view p:has(> img:
   .page-listing li.section-li:has(a[href$="/"]) .section::after {
     order: 3 !important;
     position: static !important;
-    margin: 0 1rem 0.75rem 0.5rem !important;
+    margin: 0 1rem 0.75rem 0.45rem !important;
     align-self: center !important;
   }
 
@@ -1949,22 +1958,40 @@ article[data-quartz-component="ContentPage"] .markdown-preview-view p:has(> img:
    7. SCALABILITÀ: BADGE CARTELLE, FILTRO RAPIDO & AUTO-TOC
    ======================================================== */
 @media (min-width: 801px) {
+  .page-listing li.section-li:has(a[href$="/"]) .section {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 0.55rem !important;
+    padding: 0.85rem 1.15rem !important;
+    box-sizing: border-box !important;
+  }
+
   .page-listing li.section-li:has(a[href$="/"]) .desc {
-    padding-right: 12rem !important;
+    order: 1 !important;
+    flex: 1 1 auto !important;
+    min-width: 0 !important;
+    padding: 0 !important;
   }
 }
 
 .sp-folder-badge {
-  position: absolute;
-  top: 0.77rem;
-  right: 6.45rem;
+  order: 2 !important;
+  flex-shrink: 0 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  height: 26px !important;
+  box-sizing: border-box !important;
+  position: static !important;
   z-index: 2;
   font-size: 0.74rem;
   font-weight: 600;
+  line-height: 1;
   color: var(--darkgray);
   background: var(--light);
   border: 1px solid var(--gray);
-  padding: 0.18rem 0.5rem;
+  padding: 0 0.55rem;
   border-radius: 4px;
   pointer-events: none;
 }
