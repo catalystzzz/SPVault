@@ -4,6 +4,8 @@ Bentham (Secretary)
 
 A kind and well-mannered professional, she holds great power behind the scenes as she pulls the strings. She jolts awake, the whirring of quartz and watch hands rousing her from slumber. Her childhood dreams are now a driving force that propels her to ascend ever higher, as tireless as the ticking hands of a clock. But dreams without root wither before the flesh, and the rot of ambition spares none. And those who remain strong, marching ever on into the future, are never truly innocent at heart.
 
+Though she is technically the UMI Board Office secretary, although it is entirely possible she may be the one holding the actual power at this stage.
+
 ###### Traduzione
 
 Bentham (Segretaria)
@@ -12,6 +14,7 @@ Bentham (Segretaria)
 
 Professionista gentile e dai modi raffinati, detiene un grande potere dietro le quinte, muovendo i fili nell'ombra. Si desta di soprassalto, risvegliata dal ronzio del quarzo e dal movimento delle lancette. I sogni della sua infanzia sono ora la forza motrice che la spinge a salire sempre più in alto, instancabile come il ticchettio di un orologio. Eppure, i sogni privi di radici appassiscono insieme alla carne, e il logorio dell'ambizione non risparmia nessuno. E coloro che restano saldi, avanzando incessantemente verso il futuro, non sono mai, nel profondo, davvero innocenti.
 
+Anche se tecnicamente è la segretaria dell'UMI Board Office, è del tutto possibile che in questa fase sia proprio lei a detenere il vero potere.
 ###### Immagini
 ![[Bentham Drip Marketing.jpg]]
 

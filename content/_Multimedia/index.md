@@ -2,7 +2,7 @@
 title: Multimedia
 ---
 
-Raccolta organizzata dei file multimediali presenti nel database (93 file in 10 cartelle). Clicca su una categoria per espandere le anteprime:
+Raccolta organizzata dei file multimediali presenti nel database (103 file in 13 cartelle). Clicca su una categoria per espandere le anteprime:
 
 <div class="sp-media-archive">
 <details class="sp-media-group">
@@ -64,6 +64,28 @@ Raccolta organizzata dei file multimediali presenti nel database (93 file in 10 
   </div>
 </details>
 <details class="sp-media-group">
+  <summary><span class="sp-media-folder-name">Art Per Fazioni/Loghi Fazioni</span><span class="sp-media-count">2 file</span></summary>
+  <div class="sp-media-grid">
+    <a href="/_multimedia/art-per-fazioni/loghi-fazioni/logo-river-constabulary.webp" class="sp-media-card" data-no-popover="true">
+      <div class="sp-media-thumb"><img src="/_multimedia/art-per-fazioni/loghi-fazioni/logo-river-constabulary.webp" alt="Logo River Constabulary.webp" loading="lazy" /></div>
+      <div class="sp-media-name" title="Logo River Constabulary.webp">Logo River Constabulary.webp</div>
+    </a>
+    <a href="/_multimedia/art-per-fazioni/loghi-fazioni/logo-stats.webp" class="sp-media-card" data-no-popover="true">
+      <div class="sp-media-thumb"><img src="/_multimedia/art-per-fazioni/loghi-fazioni/logo-stats.webp" alt="Logo STATS.webp" loading="lazy" /></div>
+      <div class="sp-media-name" title="Logo STATS.webp">Logo STATS.webp</div>
+    </a>
+  </div>
+</details>
+<details class="sp-media-group">
+  <summary><span class="sp-media-folder-name">Art Per Fazioni/Sedi e Location</span><span class="sp-media-count">1 file</span></summary>
+  <div class="sp-media-grid">
+    <a href="/_multimedia/art-per-fazioni/sedi-e-location/sede-stats.webp" class="sp-media-card" data-no-popover="true">
+      <div class="sp-media-thumb"><img src="/_multimedia/art-per-fazioni/sedi-e-location/sede-stats.webp" alt="Sede STATS.webp" loading="lazy" /></div>
+      <div class="sp-media-name" title="Sede STATS.webp">Sede STATS.webp</div>
+    </a>
+  </div>
+</details>
+<details class="sp-media-group">
   <summary><span class="sp-media-folder-name">Art Per Festività</span><span class="sp-media-count">2 file</span></summary>
   <div class="sp-media-grid">
     <a href="/_multimedia/art-per-festività/april-fool-alf.jpg" class="sp-media-card" data-no-popover="true">
@@ -77,8 +99,12 @@ Raccolta organizzata dei file multimediali presenti nel database (93 file in 10 
   </div>
 </details>
 <details class="sp-media-group">
-  <summary><span class="sp-media-folder-name">Art Per Mappe</span><span class="sp-media-count">2 file</span></summary>
+  <summary><span class="sp-media-folder-name">Art Per Mappe</span><span class="sp-media-count">8 file</span></summary>
   <div class="sp-media-grid">
+    <a href="/_multimedia/art-per-mappe/gourmet-market.webp" class="sp-media-card" data-no-popover="true">
+      <div class="sp-media-thumb"><img src="/_multimedia/art-per-mappe/gourmet-market.webp" alt="Gourmet Market.webp" loading="lazy" /></div>
+      <div class="sp-media-name" title="Gourmet Market.webp">Gourmet Market.webp</div>
+    </a>
     <a href="/_multimedia/art-per-mappe/high-peers-e-spinotrodes.jpg" class="sp-media-card" data-no-popover="true">
       <div class="sp-media-thumb"><img src="/_multimedia/art-per-mappe/high-peers-e-spinotrodes.jpg" alt="High Peers e Spinotrodes.jpg" loading="lazy" /></div>
       <div class="sp-media-name" title="High Peers e Spinotrodes.jpg">High Peers e Spinotrodes.jpg</div>
@@ -86,6 +112,35 @@ Raccolta organizzata dei file multimediali presenti nel database (93 file in 10 
     <a href="/_multimedia/art-per-mappe/incinerator-abyss.jpg" class="sp-media-card" data-no-popover="true">
       <div class="sp-media-thumb"><img src="/_multimedia/art-per-mappe/incinerator-abyss.jpg" alt="Incinerator Abyss.jpg" loading="lazy" /></div>
       <div class="sp-media-name" title="Incinerator Abyss.jpg">Incinerator Abyss.jpg</div>
+    </a>
+    <a href="/_multimedia/art-per-mappe/silvernia-map-1.webp" class="sp-media-card" data-no-popover="true">
+      <div class="sp-media-thumb"><img src="/_multimedia/art-per-mappe/silvernia-map-1.webp" alt="Silvernia Map 1.webp" loading="lazy" /></div>
+      <div class="sp-media-name" title="Silvernia Map 1.webp">Silvernia Map 1.webp</div>
+    </a>
+    <a href="/_multimedia/art-per-mappe/silvernia-map-2.webp" class="sp-media-card" data-no-popover="true">
+      <div class="sp-media-thumb"><img src="/_multimedia/art-per-mappe/silvernia-map-2.webp" alt="Silvernia Map 2.webp" loading="lazy" /></div>
+      <div class="sp-media-name" title="Silvernia Map 2.webp">Silvernia Map 2.webp</div>
+    </a>
+    <a href="/_multimedia/art-per-mappe/silvernia-map-3.webp" class="sp-media-card" data-no-popover="true">
+      <div class="sp-media-thumb"><img src="/_multimedia/art-per-mappe/silvernia-map-3.webp" alt="Silvernia Map 3.webp" loading="lazy" /></div>
+      <div class="sp-media-name" title="Silvernia Map 3.webp">Silvernia Map 3.webp</div>
+    </a>
+    <a href="/_multimedia/art-per-mappe/silvernia-map-4.webp" class="sp-media-card" data-no-popover="true">
+      <div class="sp-media-thumb"><img src="/_multimedia/art-per-mappe/silvernia-map-4.webp" alt="Silvernia Map 4.webp" loading="lazy" /></div>
+      <div class="sp-media-name" title="Silvernia Map 4.webp">Silvernia Map 4.webp</div>
+    </a>
+    <a href="/_multimedia/art-per-mappe/toroid-spine-traid-fair.webp" class="sp-media-card" data-no-popover="true">
+      <div class="sp-media-thumb"><img src="/_multimedia/art-per-mappe/toroid-spine-traid-fair.webp" alt="Toroid Spine Traid Fair.webp" loading="lazy" /></div>
+      <div class="sp-media-name" title="Toroid Spine Traid Fair.webp">Toroid Spine Traid Fair.webp</div>
+    </a>
+  </div>
+</details>
+<details class="sp-media-group">
+  <summary><span class="sp-media-folder-name">Personaggi/Acquaintance Intel</span><span class="sp-media-count">1 file</span></summary>
+  <div class="sp-media-grid">
+    <a href="/_multimedia/personaggi/acquaintance-intel/cordelia-acquaintance-intel.webp" class="sp-media-card" data-no-popover="true">
+      <div class="sp-media-thumb"><img src="/_multimedia/personaggi/acquaintance-intel/cordelia-acquaintance-intel.webp" alt="Cordelia Acquaintance Intel.webp" loading="lazy" /></div>
+      <div class="sp-media-name" title="Cordelia Acquaintance Intel.webp">Cordelia Acquaintance Intel.webp</div>
     </a>
   </div>
 </details>

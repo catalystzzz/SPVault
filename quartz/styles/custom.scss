@@ -362,7 +362,7 @@ ul.overflow,
 .explorer ul.explorer-ul > li {
   margin: 0 !important;
   list-style: none !important;
-  order: 99 !important;
+  order: 20 !important;
   width: 100% !important;
   box-sizing: border-box !important;
 }
@@ -500,26 +500,33 @@ ul.overflow,
 .explorer ul.explorer-ul > li:has(a[href*="/note-recenti"]) {
   order: 1 !important;
 }
-.explorer ul.explorer-ul > li:has(a[href*="/personaggi"]) {
+.explorer ul.explorer-ul > li:has(a[href*="personaggi"]) {
   order: 2 !important;
 }
-.explorer ul.explorer-ul > li:has(a[href*="/fazioni"]) {
+.explorer ul.explorer-ul > li:has(a[href*="npc--and--menzionati"]) {
   order: 3 !important;
 }
-.explorer ul.explorer-ul > li:has(a[href*="/mappe"]) {
+.explorer ul.explorer-ul > li:has(a[href*="/fazioni"]) {
   order: 4 !important;
 }
-.explorer ul.explorer-ul > li:has(a[href*="/post-ufficiali"]) {
+.explorer ul.explorer-ul > li:has(a[href*="/mappe"]) {
   order: 5 !important;
+}
+.explorer ul.explorer-ul > li:has(a[href*="/post-ufficiali"]) {
+  order: 6 !important;
+}
+.explorer ul.explorer-ul > li:has(a[href*="concetti-chiave"]) {
+  order: 7 !important;
 }
 .explorer ul.explorer-ul > li:has(a[href*="/_multimedia"]),
 .explorer ul.explorer-ul > li:has(a[href*="/multimedia"]) {
-  order: 6 !important;
+  order: 50 !important;
 }
 
-/* 7. Nascondere dizionario e tag dal menu laterale */
+/* 7. Nascondere dizionario e tag dal menu laterale (e sentinel overflow-end) */
 .explorer li:has(a[href*="/dizionario"]),
-.explorer li:has(a[href*="/tag"]) {
+.explorer li:has(a[href*="/tag"]),
+.explorer ul.explorer-ul > li.overflow-end {
   display: none !important;
 }
 
