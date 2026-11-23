@@ -253,7 +253,7 @@ export default function ComparePanel(_props: QuartzComponentProps) {
         wrapper.appendChild(banner.cloneNode(true));
       }
 
-      const article = center.querySelector('article[data-quartz-component="ContentPage"]');
+      const article = center.querySelector("article");
       if (article) {
         wrapper.appendChild(article.cloneNode(true));
       }

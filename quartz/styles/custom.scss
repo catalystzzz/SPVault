@@ -1827,7 +1827,7 @@ body[data-slug="tag/index"] article h3 + ul li a:hover {
 /* ========================================================
    5. STRUTTURA INTERNA NOTE (ETICHETTE SEZIONI & IMMAGINI)
    ======================================================== */
-article[data-quartz-component="ContentPage"] .markdown-preview-view h6 {
+article .markdown-preview-view h6 {
   font-size: 0.76rem !important;
   font-weight: 700 !important;
   text-transform: uppercase !important;
@@ -1840,8 +1840,8 @@ article[data-quartz-component="ContentPage"] .markdown-preview-view h6 {
 }
 
 /* Più immagini consecutive in una nota disposte affiancate su desktop (sia su <p> separati sia nello stesso <p>) */
-article[data-quartz-component="ContentPage"] .markdown-preview-view p:has(> img:only-child):has(+ p > img:only-child),
-article[data-quartz-component="ContentPage"] .markdown-preview-view p:has(> img:only-child) + p:has(> img:only-child) {
+article .markdown-preview-view p:has(> img:only-child):has(+ p > img:only-child),
+article .markdown-preview-view p:has(> img:only-child) + p:has(> img:only-child) {
   display: inline-block !important;
   width: calc(50% - 1rem) !important;
   vertical-align: top !important;
@@ -1849,11 +1849,11 @@ article[data-quartz-component="ContentPage"] .markdown-preview-view p:has(> img:
   box-sizing: border-box !important;
 }
 
-article[data-quartz-component="ContentPage"] .markdown-preview-view p:has(img ~ img) > img + br {
+article .markdown-preview-view p:has(img ~ img) > img + br {
   display: none !important;
 }
 
-article[data-quartz-component="ContentPage"] .markdown-preview-view p:has(img ~ img) > img {
+article .markdown-preview-view p:has(img ~ img) > img {
   display: inline-block !important;
   width: auto !important;
   height: auto !important;
@@ -1867,7 +1867,7 @@ article[data-quartz-component="ContentPage"] .markdown-preview-view p:has(img ~ 
   box-sizing: border-box !important;
 }
 
-article[data-quartz-component="ContentPage"] .markdown-preview-view p:has(> img:only-child) img {
+article .markdown-preview-view p:has(> img:only-child) img {
   max-height: 400px !important;
   width: auto !important;
   height: auto !important;
@@ -1947,14 +1947,14 @@ article[data-quartz-component="ContentPage"] .markdown-preview-view p:has(> img:
     gap: 0.6rem;
   }
 
-  article[data-quartz-component="ContentPage"] .markdown-preview-view p:has(> img:only-child):has(+ p > img:only-child),
-  article[data-quartz-component="ContentPage"] .markdown-preview-view p:has(> img:only-child) + p:has(> img:only-child) {
+  article .markdown-preview-view p:has(> img:only-child):has(+ p > img:only-child),
+  article .markdown-preview-view p:has(> img:only-child) + p:has(> img:only-child) {
     display: block !important;
     width: 100% !important;
     margin: 0.5rem 0 !important;
   }
 
-  article[data-quartz-component="ContentPage"] .markdown-preview-view p:has(img ~ img) > img {
+  article .markdown-preview-view p:has(img ~ img) > img {
     display: block !important;
     max-width: 100% !important;
     margin: 0.5rem 0 !important;
