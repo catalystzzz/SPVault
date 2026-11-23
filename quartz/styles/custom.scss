@@ -352,10 +352,18 @@ ul.overflow,
   display: flex !important;
   flex-direction: column !important;
   gap: 0.5rem !important;
-  padding: 0 !important;
+  padding: 0 0 0.35rem 0 !important;
   margin: 0.75rem 0 !important;
   width: 100% !important;
   box-sizing: border-box !important;
+  mask-image: none !important;
+  -webkit-mask-image: none !important;
+}
+
+.explorer ul.overflow.gradient-active,
+.explorer ul.explorer-ul.gradient-active {
+  mask-image: none !important;
+  -webkit-mask-image: none !important;
 }
 
 /* 3. Ogni cartella di riferimento diventa un Tasto solido */
@@ -815,6 +823,26 @@ body[data-slug="personaggi"] .section-ul {
   visibility: hidden !important;
   opacity: 0 !important;
   pointer-events: none !important;
+}
+
+/* Anteprima note su hover (.popover-inner): più ampia e leggibile su desktop */
+.popover > .popover-inner:not([data-content-type*="image"]):not([data-content-type*="pdf"]) {
+  width: min(49rem, 60vw) !important;
+  max-height: min(35rem, 68vh) !important;
+  padding: 0.85rem 1.2rem 1.15rem 1.2rem !important;
+  background-color: var(--light) !important;
+  border: 1px solid var(--gray) !important;
+  border-radius: 10px !important;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.45) !important;
+}
+
+.popover > .popover-inner:not([data-content-type*="image"]) img {
+  max-height: 260px !important;
+  width: auto !important;
+  height: auto !important;
+  max-width: 100% !important;
+  object-fit: contain !important;
+  border-radius: 6px !important;
 }
 
 /* ========================================================

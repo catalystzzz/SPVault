@@ -293,11 +293,74 @@ export default function DatabaseEnhancements({ allFiles }: QuartzComponentProps)
     }
   }
 
+  function initPopoverPositionClamp() {
+    if (document.body.dataset.spPopoverClampBound === "1") return;
+    document.body.dataset.spPopoverClampBound = "1";
+
+    function adjustPopover(el) {
+      if (!el || !el.classList.contains("active-popover") || window.innerWidth < 1024) return;
+      const tr = el.style.transform;
+      if (!tr || tr === "none") return;
+      let x = 0, y = 0;
+      try {
+        const mat = new DOMMatrix(tr);
+        x = mat.m41;
+        y = mat.m42;
+      } catch {
+        return;
+      }
+      const rect = el.getBoundingClientRect();
+      if (!rect.width) return;
+
+      const sidebar = document.querySelector(".sidebar.left");
+      const sidebarRight = (sidebar && !document.body.classList.contains("sp-compare-active"))
+        ? sidebar.getBoundingClientRect().right
+        : 0;
+      const minX = sidebarRight > 0 ? Math.max(24, Math.round(sidebarRight - 95)) : 24;
+      const maxX = Math.max(minX, Math.round(window.innerWidth - rect.width - 16));
+      const nextX = Math.min(Math.max(x, minX), maxX);
+
+      const minY = 12;
+      const maxY = Math.max(minY, Math.round(window.innerHeight - rect.height - 12));
+      const nextY = Math.min(Math.max(y, minY), maxY);
+
+      if (Math.abs(nextX - x) >= 2 || Math.abs(nextY - y) >= 2) {
+        el.style.transform = "translate(" + Math.round(nextX) + "px, " + Math.round(nextY) + "px)";
+      }
+    }
+
+    const obs = new MutationObserver((mutations) => {
+      for (const m of mutations) {
+        if (m.type === "childList") {
+          for (const node of m.addedNodes) {
+            if (!(node instanceof HTMLElement)) continue;
+            const popovers = node.classList.contains("popover")
+              ? [node]
+              : Array.from(node.querySelectorAll(".popover"));
+            for (const p of popovers) {
+              obs.observe(p, { attributes: true, attributeFilter: ["style", "class"] });
+              requestAnimationFrame(() => adjustPopover(p));
+              setTimeout(() => adjustPopover(p), 30);
+            }
+          }
+        } else if (m.type === "attributes" && m.target instanceof HTMLElement && m.target.classList.contains("popover")) {
+          adjustPopover(m.target);
+        }
+      }
+    });
+
+    obs.observe(document.body, { childList: true, subtree: true });
+    document.querySelectorAll(".popover").forEach((p) => {
+      obs.observe(p, { attributes: true, attributeFilter: ["style", "class"] });
+    });
+  }
+
   function runEnhancements() {
     enhanceFolderBadges();
     initLocalFilter();
     initAutoToc();
     initTwitterEmbeds();
+    initPopoverPositionClamp();
   }
 
   document.addEventListener("DOMContentLoaded", runEnhancements);
