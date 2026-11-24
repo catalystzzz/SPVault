@@ -2,7 +2,7 @@
 title: Multimedia
 ---
 
-Raccolta organizzata dei file multimediali presenti nel database (103 file in 13 cartelle). Clicca su una categoria per espandere le anteprime:
+Raccolta organizzata dei file multimediali presenti nel database (104 file in 13 cartelle). Clicca su una categoria per espandere le anteprime:
 
 <div class="sp-media-archive">
 <details class="sp-media-group">
@@ -136,11 +136,15 @@ Raccolta organizzata dei file multimediali presenti nel database (103 file in 13
   </div>
 </details>
 <details class="sp-media-group">
-  <summary><span class="sp-media-folder-name">Personaggi/Acquaintance Intel</span><span class="sp-media-count">1 file</span></summary>
+  <summary><span class="sp-media-folder-name">Personaggi/Acquaintance Intel</span><span class="sp-media-count">2 file</span></summary>
   <div class="sp-media-grid">
     <a href="/_multimedia/personaggi/acquaintance-intel/cordelia-acquaintance-intel.webp" class="sp-media-card" data-no-popover="true">
       <div class="sp-media-thumb"><img src="/_multimedia/personaggi/acquaintance-intel/cordelia-acquaintance-intel.webp" alt="Cordelia Acquaintance Intel.webp" loading="lazy" /></div>
       <div class="sp-media-name" title="Cordelia Acquaintance Intel.webp">Cordelia Acquaintance Intel.webp</div>
+    </a>
+    <a href="/_multimedia/personaggi/acquaintance-intel/feys-acquaintance-intel.webp" class="sp-media-card" data-no-popover="true">
+      <div class="sp-media-thumb"><img src="/_multimedia/personaggi/acquaintance-intel/feys-acquaintance-intel.webp" alt="Feys Acquaintance Intel.webp" loading="lazy" /></div>
+      <div class="sp-media-name" title="Feys Acquaintance Intel.webp">Feys Acquaintance Intel.webp</div>
     </a>
   </div>
 </details>

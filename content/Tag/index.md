@@ -34,7 +34,7 @@ Elenco dinamico di tutti i contenuti del vault organizzati per tag (92 tag total
   <a href="#fables" class="sp-tag-cloud-pill" data-no-popover="true">#fables<span class="sp-tag-count">1</span></a>
   <a href="#fate" class="sp-tag-cloud-pill" data-no-popover="true">#fate<span class="sp-tag-count">1</span></a>
   <a href="#feliana" class="sp-tag-cloud-pill" data-no-popover="true">#feliana<span class="sp-tag-count">1</span></a>
-  <a href="#feys" class="sp-tag-cloud-pill" data-no-popover="true">#feys<span class="sp-tag-count">2</span></a>
+  <a href="#feys" class="sp-tag-cloud-pill" data-no-popover="true">#feys<span class="sp-tag-count">3</span></a>
   <a href="#firtho" class="sp-tag-cloud-pill" data-no-popover="true">#firtho<span class="sp-tag-count">5</span></a>
   <a href="#goldbud" class="sp-tag-cloud-pill" data-no-popover="true">#goldbud<span class="sp-tag-count">1</span></a>
   <a href="#gourmetmarket" class="sp-tag-cloud-pill" data-no-popover="true">#gourmetmarket<span class="sp-tag-count">1</span></a>
@@ -214,8 +214,9 @@ Elenco dinamico di tutti i contenuti del vault organizzati per tag (92 tag total
 - [[Post Ufficiali/Trailers/Presentazione Gioco/The Golden Age of Detectives|The Golden Age of Detectives]]
 
 ### #feys
-- [[Personaggi/Feys/Feys Character Introduction|Feys Character Introduction]]
+- [[Personaggi/Feys/Feys Acquaintance Intel|Feys Acquaintance Intel]]
 - [[Personaggi/Feys/Feys Drip Marketing|Feys Drip Marketing]]
+- [[Personaggi/Feys/Feys Hidden Pages|Feys Hidden Pages]]
 
 ### #firtho
 - [[Mappe/Distretti ed Aree Menzionate/Silvernia/The Corner Clinic|The Corner Clinic]]
@@ -299,7 +300,7 @@ Elenco dinamico di tutti i contenuti del vault organizzati per tag (92 tag total
 - [[Personaggi/Alf/Alf Character Introduction|Alf Character Introduction]]
 
 ### #maid85
-- [[Personaggi/Feys/Feys Character Introduction|Feys Character Introduction]]
+- [[Personaggi/Feys/Feys Acquaintance Intel|Feys Acquaintance Intel]]
 
 ### #mcbarley
 - [[Post Ufficiali/Characters Extra Stories/Cinthyia Sky|Cinthyia Sky]]
@@ -325,7 +326,7 @@ Elenco dinamico di tutti i contenuti del vault organizzati per tag (92 tag total
 - [[Personaggi/Alf/Alf Drip Marketing|Alf Drip Marketing]]
 - [[Personaggi/Argos/Argos Character Introduction|Argos Character Introduction]]
 - [[Personaggi/Argos/Argos Drip Marketing|Argos Drip Marketing]]
-- [[Personaggi/Feys/Feys Character Introduction|Feys Character Introduction]]
+- [[Personaggi/Feys/Feys Acquaintance Intel|Feys Acquaintance Intel]]
 - [[Personaggi/Feys/Feys Drip Marketing|Feys Drip Marketing]]
 
 ### #morgane
@@ -373,7 +374,7 @@ Elenco dinamico di tutti i contenuti del vault organizzati per tag (92 tag total
 - [[Post Ufficiali/Trailers/Presentazione Gioco/Dichotomy Beta Test Trailer - Black Knights' Tango|Dichotomy Beta Test Trailer - Black Knights' Tango]]
 
 ### #receptionist
-- [[Personaggi/Feys/Feys Character Introduction|Feys Character Introduction]]
+- [[Personaggi/Feys/Feys Acquaintance Intel|Feys Acquaintance Intel]]
 
 ### #redrose
 - [[Fazioni/ROYALTY AND ARISTOCRACY/House Flora|House Flora]]

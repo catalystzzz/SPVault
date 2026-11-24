@@ -9,6 +9,8 @@ The Maid Institute, Society, and Services receptionist, Maid No. 85. While she p
 La receptionist del Maid Institute, Society, and Services, Maid No. 85. Sebbene reciti piuttosto bene la parte della domestica perfetta quando ce la mette tutta, non dura mai molto a lungo. È astutamente birichina e spesso pigra, eppure in fondo è una brava persona e un'assistente affidabile.
 ###### Immagini e Link
 
+![[Feys Acquaintance Intel.webp]]
+
 ###### Tags
 #receptionist #feys #maid85 #miss 
 
