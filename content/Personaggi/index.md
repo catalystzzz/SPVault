@@ -8,7 +8,7 @@ Elenco dei personaggi di **Silver Palace**: seleziona un personaggio per acceder
 
 <a href="/personaggi/alf/" class="sp-roster-card">
   <div class="sp-roster-img-box">
-    <img src="/_multimedia/personaggi/profile-art/alf-profile-art.jpg" alt="Alf Profile Art" loading="lazy" />
+    <img src="/static/roster-thumbs/alf-profile-art.webp" alt="Alf Profile Art" width="520" height="520" decoding="async" loading="eager" fetchpriority="high" />
   </div>
   <div class="sp-roster-body">
     <div class="sp-roster-name">Alf</div>
@@ -17,7 +17,7 @@ Elenco dei personaggi di **Silver Palace**: seleziona un personaggio per acceder
 
 <a href="/personaggi/argos/" class="sp-roster-card">
   <div class="sp-roster-img-box">
-    <img src="/_multimedia/personaggi/profile-art/argos-profile-art.jpg" alt="Argos Profile Art" loading="lazy" />
+    <img src="/static/roster-thumbs/argos-profile-art.webp" alt="Argos Profile Art" width="520" height="520" decoding="async" loading="eager" fetchpriority="high" />
   </div>
   <div class="sp-roster-body">
     <div class="sp-roster-name">Argos</div>
@@ -26,7 +26,7 @@ Elenco dei personaggi di **Silver Palace**: seleziona un personaggio per acceder
 
 <a href="/personaggi/bentham/" class="sp-roster-card">
   <div class="sp-roster-img-box">
-    <img src="/_multimedia/personaggi/profile-art/bentham-profile-art.jpg" alt="Bentham Profile Art" loading="lazy" />
+    <img src="/static/roster-thumbs/bentham-profile-art.webp" alt="Bentham Profile Art" width="520" height="520" decoding="async" loading="eager" fetchpriority="high" />
   </div>
   <div class="sp-roster-body">
     <div class="sp-roster-name">Bentham</div>
@@ -35,7 +35,7 @@ Elenco dei personaggi di **Silver Palace**: seleziona un personaggio per acceder
 
 <a href="/personaggi/captain-kaboom/" class="sp-roster-card">
   <div class="sp-roster-img-box">
-    <img src="/_multimedia/personaggi/profile-art/captain-kaboom-profile-art.jpg" alt="Captain Kaboom Profile Art" loading="lazy" />
+    <img src="/static/roster-thumbs/captain-kaboom-profile-art.webp" alt="Captain Kaboom Profile Art" width="520" height="520" decoding="async" loading="eager" fetchpriority="high" />
   </div>
   <div class="sp-roster-body">
     <div class="sp-roster-name">Captain Kaboom</div>
@@ -44,7 +44,7 @@ Elenco dei personaggi di **Silver Palace**: seleziona un personaggio per acceder
 
 <a href="/personaggi/cinderella/" class="sp-roster-card">
   <div class="sp-roster-img-box">
-    <img src="/_multimedia/personaggi/profile-art/cinderella-profile-art.jpg" alt="Cinderella Profile Art" loading="lazy" />
+    <img src="/static/roster-thumbs/cinderella-profile-art.webp" alt="Cinderella Profile Art" width="520" height="520" decoding="async" loading="lazy" />
   </div>
   <div class="sp-roster-body">
     <div class="sp-roster-name">Cinderella</div>
@@ -53,7 +53,7 @@ Elenco dei personaggi di **Silver Palace**: seleziona un personaggio per acceder
 
 <a href="/personaggi/cordelia/" class="sp-roster-card">
   <div class="sp-roster-img-box">
-    <img src="/_multimedia/personaggi/profile-art/cordelia-profile-art.jpg" alt="Cordelia Profile Art" loading="lazy" />
+    <img src="/static/roster-thumbs/cordelia-profile-art.webp" alt="Cordelia Profile Art" width="520" height="520" decoding="async" loading="lazy" />
   </div>
   <div class="sp-roster-body">
     <div class="sp-roster-name">Cordelia</div>
@@ -62,7 +62,7 @@ Elenco dei personaggi di **Silver Palace**: seleziona un personaggio per acceder
 
 <a href="/personaggi/cynthia-ii/" class="sp-roster-card">
   <div class="sp-roster-img-box">
-    <img src="/_multimedia/personaggi/profile-art/cynthia-profile-art.jpg" alt="Cynthia II Profile Art" loading="lazy" />
+    <img src="/static/roster-thumbs/cynthia-profile-art.webp" alt="Cynthia II Profile Art" width="520" height="520" decoding="async" loading="lazy" />
   </div>
   <div class="sp-roster-body">
     <div class="sp-roster-name">Cynthia II</div>
@@ -71,7 +71,7 @@ Elenco dei personaggi di **Silver Palace**: seleziona un personaggio per acceder
 
 <a href="/personaggi/detective/" class="sp-roster-card">
   <div class="sp-roster-img-box">
-    <img src="/_multimedia/personaggi/profile-art/detective-f-profile-art.jpg" alt="Detective Profile Art" loading="lazy" />
+    <img src="/static/roster-thumbs/detective-f-profile-art.webp" alt="Detective Profile Art" width="520" height="520" decoding="async" loading="lazy" />
   </div>
   <div class="sp-roster-body">
     <div class="sp-roster-name">Detective</div>
@@ -80,7 +80,7 @@ Elenco dei personaggi di **Silver Palace**: seleziona un personaggio per acceder
 
 <a href="/personaggi/feys/" class="sp-roster-card">
   <div class="sp-roster-img-box">
-    <img src="/_multimedia/personaggi/profile-art/feys-profile-art.jpg" alt="Feys Profile Art" loading="lazy" />
+    <img src="/static/roster-thumbs/feys-profile-art.webp" alt="Feys Profile Art" width="520" height="520" decoding="async" loading="lazy" />
   </div>
   <div class="sp-roster-body">
     <div class="sp-roster-name">Feys</div>
@@ -89,7 +89,7 @@ Elenco dei personaggi di **Silver Palace**: seleziona un personaggio per acceder
 
 <a href="/personaggi/firtho/" class="sp-roster-card">
   <div class="sp-roster-img-box">
-    <img src="/_multimedia/personaggi/profile-art/firtho-profile-art.jpg" alt="Firtho Profile Art" loading="lazy" />
+    <img src="/static/roster-thumbs/firtho-profile-art.webp" alt="Firtho Profile Art" width="520" height="520" decoding="async" loading="lazy" />
   </div>
   <div class="sp-roster-body">
     <div class="sp-roster-name">Firtho</div>
@@ -98,7 +98,7 @@ Elenco dei personaggi di **Silver Palace**: seleziona un personaggio per acceder
 
 <a href="/personaggi/gratia/" class="sp-roster-card">
   <div class="sp-roster-img-box">
-    <img src="/_multimedia/personaggi/profile-art/gratia-profile-art.jpg" alt="Gratia Profile Art" loading="lazy" />
+    <img src="/static/roster-thumbs/gratia-profile-art.webp" alt="Gratia Profile Art" width="520" height="520" decoding="async" loading="lazy" />
   </div>
   <div class="sp-roster-body">
     <div class="sp-roster-name">Gratia</div>
@@ -107,7 +107,7 @@ Elenco dei personaggi di **Silver Palace**: seleziona un personaggio per acceder
 
 <a href="/personaggi/grimm/" class="sp-roster-card">
   <div class="sp-roster-img-box">
-    <img src="/_multimedia/personaggi/profile-art/grimm-profile-art.jpg" alt="Grimm Profile Art" loading="lazy" />
+    <img src="/static/roster-thumbs/grimm-profile-art.webp" alt="Grimm Profile Art" width="520" height="520" decoding="async" loading="lazy" />
   </div>
   <div class="sp-roster-body">
     <div class="sp-roster-name">Grimm</div>
@@ -116,7 +116,7 @@ Elenco dei personaggi di **Silver Palace**: seleziona un personaggio per acceder
 
 <a href="/personaggi/gucia/" class="sp-roster-card">
   <div class="sp-roster-img-box">
-    <img src="/_multimedia/personaggi/profile-art/gucia-profile-art.jpg" alt="Gucia Profile Art" loading="lazy" />
+    <img src="/static/roster-thumbs/gucia-profile-art.webp" alt="Gucia Profile Art" width="520" height="520" decoding="async" loading="lazy" />
   </div>
   <div class="sp-roster-body">
     <div class="sp-roster-name">Gucia</div>
@@ -125,7 +125,7 @@ Elenco dei personaggi di **Silver Palace**: seleziona un personaggio per acceder
 
 <a href="/personaggi/lorin/" class="sp-roster-card">
   <div class="sp-roster-img-box">
-    <img src="/_multimedia/personaggi/profile-art/lorin-profile-art.jpg" alt="Lorin Profile Art" loading="lazy" />
+    <img src="/static/roster-thumbs/lorin-profile-art.webp" alt="Lorin Profile Art" width="520" height="520" decoding="async" loading="lazy" />
   </div>
   <div class="sp-roster-body">
     <div class="sp-roster-name">Lorin</div>
@@ -134,7 +134,7 @@ Elenco dei personaggi di **Silver Palace**: seleziona un personaggio per acceder
 
 <a href="/personaggi/morgane/" class="sp-roster-card">
   <div class="sp-roster-img-box">
-    <img src="/_multimedia/personaggi/profile-art/morgane-profile-art.webp" alt="Morgane Profile Art" loading="lazy" />
+    <img src="/static/roster-thumbs/morgane-profile-art.webp" alt="Morgane Profile Art" width="520" height="520" decoding="async" loading="lazy" />
   </div>
   <div class="sp-roster-body">
     <div class="sp-roster-name">Morgane</div>
@@ -143,7 +143,7 @@ Elenco dei personaggi di **Silver Palace**: seleziona un personaggio per acceder
 
 <a href="/personaggi/red-rose/" class="sp-roster-card">
   <div class="sp-roster-img-box">
-    <img src="/_multimedia/personaggi/profile-art/red-rose-profile-art.jpg" alt="Red Rose Profile Art" loading="lazy" />
+    <img src="/static/roster-thumbs/red-rose-profile-art.webp" alt="Red Rose Profile Art" width="520" height="520" decoding="async" loading="lazy" />
   </div>
   <div class="sp-roster-body">
     <div class="sp-roster-name">Red Rose</div>
@@ -152,7 +152,7 @@ Elenco dei personaggi di **Silver Palace**: seleziona un personaggio per acceder
 
 <a href="/personaggi/rex/" class="sp-roster-card">
   <div class="sp-roster-img-box">
-    <img src="/_multimedia/personaggi/profile-art/rex-profile-art.jpg" alt="Rex Profile Art" loading="lazy" />
+    <img src="/static/roster-thumbs/rex-profile-art.webp" alt="Rex Profile Art" width="520" height="520" decoding="async" loading="lazy" />
   </div>
   <div class="sp-roster-body">
     <div class="sp-roster-name">Rex</div>
@@ -161,7 +161,7 @@ Elenco dei personaggi di **Silver Palace**: seleziona un personaggio per acceder
 
 <a href="/personaggi/skink/" class="sp-roster-card">
   <div class="sp-roster-img-box">
-    <img src="/_multimedia/personaggi/profile-art/skink-profile-art.jpg" alt="Skink Profile Art" loading="lazy" />
+    <img src="/static/roster-thumbs/skink-profile-art.webp" alt="Skink Profile Art" width="520" height="520" decoding="async" loading="lazy" />
   </div>
   <div class="sp-roster-body">
     <div class="sp-roster-name">Skink</div>
@@ -170,7 +170,7 @@ Elenco dei personaggi di **Silver Palace**: seleziona un personaggio per acceder
 
 <a href="/personaggi/susan/" class="sp-roster-card">
   <div class="sp-roster-img-box">
-    <img src="/_multimedia/personaggi/profile-art/susan-profile-art.jpg" alt="Susan Profile Art" loading="lazy" />
+    <img src="/static/roster-thumbs/susan-profile-art.webp" alt="Susan Profile Art" width="520" height="520" decoding="async" loading="lazy" />
   </div>
   <div class="sp-roster-body">
     <div class="sp-roster-name">Susan</div>
@@ -179,7 +179,7 @@ Elenco dei personaggi di **Silver Palace**: seleziona un personaggio per acceder
 
 <a href="/personaggi/tinsley/" class="sp-roster-card">
   <div class="sp-roster-img-box">
-    <img src="/_multimedia/personaggi/profile-art/tinsley-profile-art.webp" alt="Tinsley Profile Art" loading="lazy" />
+    <img src="/static/roster-thumbs/tinsley-profile-art.webp" alt="Tinsley Profile Art" width="520" height="520" decoding="async" loading="lazy" />
   </div>
   <div class="sp-roster-body">
     <div class="sp-roster-name">Tinsley</div>

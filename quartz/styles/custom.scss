@@ -41,7 +41,7 @@ header {
   border: 1px solid var(--gray) !important;
   border-radius: 8px !important;
   cursor: pointer !important;
-  transition: all 0.2s ease !important;
+  transition: border-color 0.15s ease, background-color 0.15s ease, box-shadow 0.15s ease !important;
   box-sizing: border-box !important;
 }
 
@@ -49,8 +49,7 @@ header {
 .sidebar.left .search > .search-button:focus {
   border-color: var(--secondary) !important;
   background: var(--light) !important;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08) !important;
-  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
 }
 
 .sidebar.left .search > .search-button svg {
@@ -121,7 +120,7 @@ a.internal[href*="tags/"],
   color: var(--darkgray) !important;
   border: 1px solid var(--gray);
   text-decoration: none !important;
-  transition: all 0.15s ease;
+  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
   letter-spacing: 0.01em;
 }
 
@@ -130,7 +129,6 @@ a.internal[href*="tags/"]:hover,
   background: var(--secondary);
   color: var(--light) !important;
   border-color: var(--secondary);
-  transform: translateY(-1px);
 }
 
 /* ========================================================
@@ -138,9 +136,15 @@ a.internal[href*="tags/"]:hover,
    ======================================================== */
 .sp-hub-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 0.9rem;
   margin: 1.5rem 0 2rem 0;
+}
+
+@media (min-width: 1000px) {
+  .sp-hub-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
 
 .sp-hub-card {
@@ -152,15 +156,14 @@ a.internal[href*="tags/"]:hover,
   border-radius: 10px;
   text-decoration: none !important;
   color: var(--dark) !important;
-  transition: all 0.2s ease;
+  transition: border-color 0.15s ease, background-color 0.15s ease, box-shadow 0.15s ease;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
 }
 
 .sp-hub-card:hover {
   border-color: var(--secondary);
   background: var(--light);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
-  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
 }
 
 .sp-hub-card .sp-hub-title {
@@ -204,13 +207,13 @@ a.internal[href*="tags/"]:hover,
   border: 1px solid var(--gray) !important;
   border-radius: 6px !important;
   font-size: 0.9rem !important;
-  transition: all 0.15s ease !important;
+  transition: border-color 0.15s ease, background-color 0.15s ease !important;
   margin: 0 !important;
 }
 
 .sp-recent-feed li:hover {
   border-color: var(--secondary) !important;
-  transform: translateX(3px) !important;
+  background: var(--light) !important;
 }
 
 .sp-recent-feed li code {
@@ -250,14 +253,13 @@ a.internal[href*="tags/"]:hover,
   border-radius: 10px;
   overflow: hidden;
   text-decoration: none !important;
-  transition: all 0.2s ease;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
 }
 
 .sp-roster-card:hover {
   border-color: var(--secondary);
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
 }
 
 .sp-roster-card .sp-roster-img-box {
@@ -351,9 +353,9 @@ ul.overflow,
   overflow-x: hidden !important;
   display: flex !important;
   flex-direction: column !important;
-  gap: 0.5rem !important;
-  padding: 0 0 0.35rem 0 !important;
-  margin: 0.75rem 0 !important;
+  gap: 0.375rem !important;
+  padding: 0 0 0.25rem 0 !important;
+  margin: 0.5rem 0 !important;
   width: 100% !important;
   box-sizing: border-box !important;
   mask-image: none !important;
@@ -380,11 +382,11 @@ ul.overflow,
   align-items: center !important;
   justify-content: space-between !important;
   width: 100% !important;
-  padding: 0.65rem 0.85rem !important;
+  padding: 0.45rem 0.78rem !important;
   background: var(--lightgray) !important;
   border: 1px solid var(--gray) !important;
   border-radius: 8px !important;
-  transition: all 0.2s ease !important;
+  transition: background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease !important;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04) !important;
   box-sizing: border-box !important;
   position: relative !important;
@@ -627,7 +629,7 @@ body[data-slug="personaggi"] .section-ul {
   box-sizing: border-box !important;
   position: relative !important;
   overflow: hidden !important;
-  transition: all 0.2s ease !important;
+  transition: border-color 0.15s ease, background-color 0.15s ease, box-shadow 0.15s ease !important;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04) !important;
   min-height: unset !important;
   display: flex !important;
@@ -637,8 +639,7 @@ body[data-slug="personaggi"] .section-ul {
 .page-listing li.section-li:hover {
   border-color: var(--secondary) !important;
   background: var(--light) !important;
-  transform: translateY(-1px) !important;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
 }
 
 /* Corpo principale della card (titolo a sinistra, badge/data a destra) */
